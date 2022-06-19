@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./Landing.css";
 import Nobg from "../../assets/image/Nobg.png";
+import img from "../../assets/image/Group 7.png";
 
 function Landing() {
   const [display, setdisplay] = useState("none");
   return (
     <div className="container mt-4 landing">
-      <nav className="navbar sticky-top">
+      <nav className="navbar sticky-top bg-light navbar-shadow">
         <div className="container-fluid d-flex justify-content-between align-center">
           {/* <img src={whitebg} style={{width:'4rem'}} alt="" /> */}
           <img src={Nobg} style={{ width: "7rem" }} alt="" />
@@ -38,8 +39,9 @@ function Landing() {
           </div>
         </div>
       </nav>
-      <div className="container mt-5 text-center">
-        <a
+      <div className="container mt-5">
+      <div className="top">
+      <a
           href="/"
           name="home"
           style={{ textDecoration: "none", color: "white" }}
@@ -54,6 +56,8 @@ function Landing() {
             first class instructors.
           </h4>
         </a>
+      <img src={img} style={{width:'20rem'}} alt="" />
+      </div>
         <a href="tel:+91-8210529561" className="mt-3 px-1 py-2" style={{display : 'inline-block',textDecoration:'none',color:'#776DEB',border:'1px solid #776DEB',borderRadius:'.3rem'}}>Get Started</a>
         <div className="our-courses">
         <a href='/' name='courses' style={{textDecoration:'none',color:'#F77E87'}}><h2>Our Courses</h2></a>
