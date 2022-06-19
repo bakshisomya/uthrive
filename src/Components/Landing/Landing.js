@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./Landing.css";
 import Nobg from "../../assets/image/Nobg.png";
 
@@ -38,6 +38,24 @@ function Landing() {
           </div>
         </div>
       </nav>
+      <div className="container mt-5">
+        <a
+          href="/"
+          name="home"
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          <h1 className="mt-5">
+            Want to learn Fluent English or <br />
+            Want to ace in college placements? <br />
+            Don't Worry. We have got you covered!
+          </h1>
+          <h4 className="mt-5">
+            Join us at Uthrive and polish your skills with the <br />
+            first class instructors.
+          </h4>
+          <a href="tel:+91-8210529561" className="mt-3 px-1 py-2" style={{display : 'inline-block',textDecoration:'none',color:'#776DEB',border:'1px solid #776DEB',borderRadius:'.3rem'}}>Get Started</a>
+        </a>
+      </div>
     </div>
   );
 }
