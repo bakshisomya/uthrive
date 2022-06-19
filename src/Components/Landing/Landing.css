@@ -1,45 +1,99 @@
-.landing{
+.landing {
     width: 100%;
     background-color: rgb(255, 255, 255);
 }
-.links{
-    width : 500px ;
+
+.links {
+    width: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.links a{
+
+.links a {
     text-decoration: none;
-    color : #776DEB;
+    color: #776DEB;
     transition: all cubic-bezier(0.19, 1, 0.22, 1);
     font-size: 14px;
 }
-.links a:hover{
+
+.links a:hover {
     transform: scale(1.2);
 }
-.nav-menu-icon{
+
+.nav-menu-icon {
     display: none;
 }
-h1{
-    color : #776DEB;
+
+h1 {
+    color: #776DEB;
     font-weight: 600;
 }
-h4{
-    color : #F77E87;
+
+h4 {
+    color: #F77E87;
     font-weight: 600;
 }
-@media only screen and (min-width : 768px) and (max-width : 1024px){
-    .links{
-        display:none
+
+.our-courses {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #fff; */
+    padding: 10rem 3rem 5rem 3rem;
+}
+
+#courses-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    margin-top: 4rem;
+    /* text-align: center; */
+}
+
+.course-card {
+    width: 70rem;
+    height: 20rem;
+    padding: 2rem 2rem;
+    margin: 2rem;
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    cursor: pointer;
+    text-align: center;
+    color: #0E1F30;
+}
+
+.course-card p {
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.course-card:hover {
+    background-color: #fff;
+    border: 5px solid #776DEB;
+    border-radius: 5px;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .links {
+        display: none
     }
-    .nav-menu-icon{
+
+    .nav-menu-icon {
         display: block;
-        color : #776DEB;
+        color: #776DEB;
     }
-    .menu-links{
+
+    .menu-links {
         position: absolute;
-        top:0;
-        right:0;
+        top: 0;
+        right: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -49,27 +103,32 @@ h4{
         background-color: #776DEB;
         transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     }
-    .menu-links a{
+
+    .menu-links a {
         text-decoration: none;
         color: #fff;
-        margin:1rem
+        margin: 1rem
     }
-    .menu-links i{
-        color : #fff
+
+    .menu-links i {
+        color: #fff
     }
 }
-@media only screen and (max-width:768px){
-    .links{
-        display:none
+
+@media only screen and (max-width:768px) {
+    .links {
+        display: none
     }
-    .nav-menu-icon{
+
+    .nav-menu-icon {
         display: block;
-        color : #776DEB
+        color: #776DEB
     }
-    .menu-links{
+
+    .menu-links {
         position: absolute;
-        top:0;
-        right:0;
+        top: 0;
+        right: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -79,12 +138,15 @@ h4{
         background-color: #776DEB;
         transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     }
-    .menu-links a{
+
+    .menu-links a {
         text-decoration: none;
         color: #fff;
-        margin:1rem
+        margin: 1rem
     }
-    .menu-links i{
-        color : #fff
+
+    .menu-links i {
+        color: #fff
     }
+
 }
