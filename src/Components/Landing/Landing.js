@@ -1,7 +1,6 @@
 import React,{useState} from "react";
 import "./Landing.css";
 import Nobg from "../../assets/image/Nobg.png";
-import whitebg from "../../assets/image/whitebg.png";
 
 function Landing() {
   const [display, setdisplay] = useState("none");
