@@ -67,7 +67,10 @@ p {
     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
     cursor: pointer;
     text-align: center;
-    color: #0E1F30;
+    color: #776DEB;
+}
+.course-card button{
+    color: #776DEB;
 }
 
 .course-card p {
@@ -151,9 +154,14 @@ p {
         box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
         cursor: pointer;
         text-align: center;
-        color: #0E1F30;
+        color: #776DEB;
     }
-    
+    .course-card button{
+        color: #776DEB;
+    }
+    .course-card h4{
+        color: #776DEB
+    }
     .course-card p {
         font-weight: 400;
         margin-top: 2rem;
@@ -234,7 +242,7 @@ p {
         box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
         cursor: pointer;
         text-align: center;
-        color: #0E1F30;
+        color: #776DEB;
     }
     
     .course-card p {
