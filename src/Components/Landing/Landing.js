@@ -16,7 +16,7 @@ function Landing() {
             <a href="#courses">Our Courses</a>
             <a href="#reviews">Reviews</a>
             <a href="#about">About Us</a>
-            <a href="#contact">Contact</a>
+            <a href="tel:+91-8210529561">Contact</a>
           </div>
           <div className="nav-menu-icon">
             <i
@@ -40,76 +40,105 @@ function Landing() {
         </div>
       </nav>
       <div className="container mt-5">
-      <div className="top">
-      <a
-          href="/"
-          name="home"
-          style={{ textDecoration: "none", color: "white" }}
+        <div className="top">
+          <a
+            href="/"
+            name="home"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <p className="mt-5 fs-1">
+              Want to learn Fluent English or <br />
+              Want to ace in college placements? <br />
+              Don't Worry. We have got you covered!
+            </p>
+            <p className="mt-5">
+              Join us at Uthrive and polish your skills with the <br />
+              first class instructors.
+            </p>
+          </a>
+          <img className='bodyimg' src={img} style={{ width: "20rem" }} alt="" />
+        </div>
+        <a
+          href="tel:+91-8210529561"
+          className="mt-3 px-1 py-2"
+          style={{
+            display: "inline-block",
+            textDecoration: "none",
+            color: "#776DEB",
+            border: "1px solid #776DEB",
+            borderRadius: ".3rem",
+          }}
         >
-          <h1 className="mt-5">
-            Want to learn Fluent English or <br />
-            Want to ace in college placements? <br />
-            Don't Worry. We have got you covered!
-          </h1>
-          <h4 className="mt-5">
-            Join us at Uthrive and polish your skills with the <br />
-            first class instructors.
-          </h4>
+          Get Started
         </a>
-      <img src={img} style={{width:'20rem'}} alt="" />
-      </div>
-        <a href="tel:+91-8210529561" className="mt-3 px-1 py-2" style={{display : 'inline-block',textDecoration:'none',color:'#776DEB',border:'1px solid #776DEB',borderRadius:'.3rem'}}>Get Started</a>
         <div className="our-courses">
-        <a href='/' name='courses' style={{textDecoration:'none',color:'#F77E87'}}><h2>Our Courses</h2></a>
-        <div id="courses-cards">
-          <div className="course-card">
-            <h4>Uthrive Placement Prep Course</h4>
-            <p>
-              A platform where you can book your seat for any stores, clinics,
-              salons etc. without any hassle
-            </p>
-          </div>
-          <div className="course-card">
-            <h4>Uthrive free webinars</h4>
-            <p>
-              We ensure your safety by providing limited slots for a day to
-              avoid crowd in public places
-            </p>
-          </div>
-          <div className="course-card">
-            <h4>Uthrive English Speaking Course</h4>
-            <p>
-              With our services you will never be unaware of new openings in
-              your locality.
-            </p>
+          <a
+            href="/"
+            name="courses"
+            style={{ textDecoration: "none", color: "#F77E87" }}
+          >
+            <h2>Our Courses</h2>
+          </a>
+          <div id="courses-cards">
+            <div className="course-card">
+              <h4>Uthrive Placement Prep Course</h4>
+              <p>
+                Join our campus placment course and stay ahead of everyone in
+                the race for high paying jobs.
+              </p>
+              <button
+                type="button"
+                className="btn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "https://forms.gle/kPGt3ETC58YDQTe38";
+                }}
+              >
+                Register Now
+              </button>
+            </div>
+            <div className="course-card">
+              <h4>Uthrive free webinars</h4>
+              <p>
+                We organise regulare free webinars on placement processes,
+                interviews and new skills to make you industry ready. Click here
+                to register for a free webinar.
+              </p>
+              <button
+                type="button"
+                className="btn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "https://forms.gle/XEvsD3HcZfLov5Rt8";
+                }}
+              >
+                Register Now
+              </button>
+            </div>
+            <div className="course-card">
+              <h4>Uthrive English Speaking Course</h4>
+              <p>
+                We have launched a special english speaking course for students
+                and professionals of all age groups.
+              </p>
+              <button
+                type="button"
+                className="btn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "https://forms.gle/HH63cVAsFiqkajES6";
+                }}
+              >
+                Register Now
+              </button>
+            </div>
           </div>
         </div>
-        <div id="courses-cards">
-          <div className="course-card">
-            <h4>Uthrive Placement Prep Course</h4>
-            <p>
-              A platform where you can book your seat for any stores, clinics,
-              salons etc. without any hassle
-            </p>
-          </div>
-          <div className="course-card">
-            <h4>Uthrive free webinars</h4>
-            <p>
-              We ensure your safety by providing limited slots for a day to
-              avoid crowd in public places
-            </p>
-          </div>
-          <div className="course-card">
-            <h4>Uthrive English Speaking Course</h4>
-            <p>
-              With our services you will never be unaware of new openings in
-              your locality.
-            </p>
-          </div>
-        </div>
-
       </div>
-      </div>
+      <footer className="container p-3 bg-light text-secondary">
+      Copyright &copy; 2020 Uthrive. All rights reserved.
+      Website Created by <a className="text-secondary"href="https://www.linkedin.com/in/somya-1231/">Somya</a>
+      </footer>
     </div>
   );
 }

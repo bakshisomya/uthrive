@@ -25,12 +25,12 @@
     display: none;
 }
 
-h1 {
+p:nth-child(1){
     color: #776DEB;
     font-weight: 600;
 }
 
-h4 {
+p {
     color: #F77E87;
     font-weight: 600;
 }
@@ -87,6 +87,9 @@ h4 {
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .bodyimg{
+        display: none;
+    }
     .links {
         display: none
     }
@@ -166,6 +169,9 @@ h4 {
 }
 
 @media only screen and (max-width:768px) {
+    .bodyimg{
+        display:none;
+    }
     .links {
         display: none
     }
