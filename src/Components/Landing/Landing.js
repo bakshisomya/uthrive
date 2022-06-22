@@ -6,7 +6,8 @@ import shirley from "../../assets/image/shirley.jpg";
 import theo from "../../assets/image/theo.jpg";
 import daniel from "../../assets/image/daniel.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from "react-responsive-carousel";
+import darkbg from "../../assets/image/darkbg.png";
 
 function Landing() {
   const [display, setdisplay] = useState("none");
@@ -21,7 +22,7 @@ function Landing() {
             <a href="#courses">Our Courses</a>
             <a href="#reviews">Reviews</a>
             <a href="#about">About Us</a>
-            <a href="tel:+91-8210529561">Contact</a>
+            <a href="#contact">Contact</a>
           </div>
           <div className="nav-menu-icon">
             <i
@@ -69,7 +70,7 @@ function Landing() {
           />
         </div>
         <a
-          href="tel:+91-8210529561"
+          href="tel:+91-9031672504"
           className="mt-3 px-1 py-2"
           style={{
             display: "inline-block",
@@ -145,63 +146,118 @@ function Landing() {
           </div>
         </div>
       </div>
-      <div className='our-courses'>
+      <div className="our-courses">
         <a
           href="/"
           name="reviews"
           style={{ textDecoration: "none", color: "#F77E87" }}
         >
-        <h2>Reviews</h2>
+          <h2>Reviews</h2>
         </a>
-        <Carousel showArrows={true}
-        infiniteLoop={true}
-        showThumbs={false}
-        showStatus={false}
-        autoPlay={true}
-        interval={6100}>
-        <div>
-          <img src={shirley} alt="" />
-          <div className="myCarousel">
-            <h3>Shirley Fultz</h3>
-            <h4>Designer</h4>
-            <p>
-              It's freeing to be able to catch up on customized news and not be
-              distracted by a social media element on the same site
-            </p>
+        <Carousel
+          showArrows={true}
+          infiniteLoop={true}
+          showThumbs={false}
+          showStatus={false}
+          autoPlay={true}
+          interval={6100}
+        >
+          <div>
+            <img src={shirley} alt="" />
+            <div className="myCarousel">
+              <h3>Shirley Fultz</h3>
+              <h4>Designer</h4>
+              <p>
+                It's freeing to be able to catch up on customized news and not
+                be distracted by a social media element on the same site
+              </p>
+            </div>
           </div>
-        </div>
-        <div>
-          <img src={daniel} alt="" />
-          <div className="myCarousel">
-            <h3>Daniel Keystone</h3>
-            <h4>Designer</h4>
-            <p>
-              The simple and intuitive design makes it easy for me use. I highly
-              recommend Fetch to my peers.
-            </p>
+          <div>
+            <img src={daniel} alt="" />
+            <div className="myCarousel">
+              <h3>Daniel Keystone</h3>
+              <h4>Designer</h4>
+              <p>
+                The simple and intuitive design makes it easy for me use. I
+                highly recommend Fetch to my peers.
+              </p>
+            </div>
           </div>
-        </div>
-        <div>
-          <img src={theo} alt="" />
-          <div className="myCarousel">
-            <h3>Theo Sorel</h3>
-            <h4>Designer</h4>
-            <p>
-              I enjoy catching up with Fetch on my laptop, or on my phone when
-              I'm on the go!
-            </p>
+          <div>
+            <img src={theo} alt="" />
+            <div className="myCarousel">
+              <h3>Theo Sorel</h3>
+              <h4>Designer</h4>
+              <p>
+                I enjoy catching up with Fetch on my laptop, or on my phone when
+                I'm on the go!
+              </p>
+            </div>
           </div>
-        </div>
-      </Carousel>
+        </Carousel>
+      </div>
+      <div className="our-courses">
+        <a
+          href="/"
+          name="about"
+          style={{ textDecoration: "none", color: "#F77E87" }}
+        >
+          <h2>About Us</h2>
+        </a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis,
+          est vitae vulputate porttitor, ipsum felis porttitor purus, pulvinar
+          cursus lorem mauris quis velit. Quisque condimentum lorem eu nunc
+          tempus, ac viverra erat ullamcorper. Vivamus molestie sem vitae est
+          lobortis, rhoncus pellentesque ligula auctor. Vivamus ut porttitor
+          nisl, quis tincidunt nisi. Sed diam est, laoreet sit amet venenatis
+          at, pulvinar eu sem. Phasellus eu diam quis ex ullamcorper dignissim.
+          Etiam viverra sodales pellentesque. Ut orci sapien, molestie id dictum
+          et, tincidunt et eros. Vivamus quis leo nec enim imperdiet aliquet.
+          Phasellus dignissim volutpat tincidunt. Integer augue lorem, elementum
+          sit amet accumsan id, sollicitudin id arcu. Sed vehicula congue arcu.
+          Aenean mi eros, malesuada ut dapibus nec, venenatis tincidunt lectus.
+          Vivamus sed scelerisque nibh, facilisis blandit lacus.
+        </p>
       </div>
       <footer className="container p-3 bg-light text-secondary">
-        Copyright &copy; 2020 Uthrive. All rights reserved. Website Created by{" "}
+        <div className="footer-contains">
+          <div className="smallsections">
+            <a href="/" name="contact" style={{ textDecoration: "none" }}>
+              <img style={{ width: "5rem" }} src={darkbg} alt="dark version logo" />
+            </a>
+          </div>
+          <div className="smallsections">
+            <h5 className="text-dark">Contact Us</h5>
+            <p>Email:</p>
+            <a
+              style={{ textDecoration: "none", color: "#776DEB" }}
+              href="mailto:uthriveinfo@gmail.com"
+            >
+              uthriveinfo@gmail.com
+            </a>
+            <p>Phone:</p>
+            <a
+              style={{ textDecoration: "none", color: "#776DEB" }}
+              href="tel:+91-9031672504"
+            >
+              +91 9031672504
+            </a>
+          </div>
+          <div className="smallsections">
+            <h5 className="text-dark">Social Links</h5>
+          </div>
+        </div>
+        <hr />
+        Copyright &copy; 2022, Uthrive. Website Created with ❤️ by{" "}
         <a
           className="text-secondary"
           href="https://www.linkedin.com/in/somya-1231/"
         >
           Somya
         </a>
+        . &nbsp;All rights reserved.
       </footer>
     </div>
   );
