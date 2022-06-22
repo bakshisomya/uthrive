@@ -225,7 +225,11 @@ function Landing() {
         <div className="footer-contains">
           <div className="smallsections">
             <a href="/" name="contact" style={{ textDecoration: "none" }}>
-              <img style={{ width: "5rem" }} src={darkbg} alt="dark version logo" />
+              <img
+                style={{ width: "5rem" }}
+                src={darkbg}
+                alt="dark version logo"
+              />
             </a>
           </div>
           <div className="smallsections">
@@ -247,6 +251,15 @@ function Landing() {
           </div>
           <div className="smallsections">
             <h5 className="text-dark">Social Links</h5>
+            <span className="social">
+              <a
+                style={{ textDecoration: "none", color: "#F77E87" }}
+                href="https://instagram.com/fluentindiawebinars?igshid=YmMyMTA2M2Y="
+                target="_blank"
+              >
+                <i class="ri-instagram-fill fs-4"></i>
+              </a>
+            </span>
           </div>
         </div>
         <hr />

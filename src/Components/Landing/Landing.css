@@ -19,6 +19,7 @@
 
 .links a:hover {
     transform: scale(1.2);
+    color : #776DEB;
 }
 
 .nav-menu-icon {
@@ -115,7 +116,20 @@ p {
 .smallsections p{
     margin-top: 1rem;
 }
-
+.social{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    border:1px solid #F77E87;
+    border-radius:50%;
+    text-align:center;
+}
+.social:hover{
+    background-color: #776DEB
+}
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
     .bodyimg {
         display: none;
