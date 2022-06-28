@@ -263,12 +263,13 @@ function Landing() {
         </div>
         <hr />
         Copyright &copy; 2022, Uthrive. Website Created with ❤️ by{" "}
-        <a
+        {/* <a
           className="text-secondary"
           href="https://www.linkedin.com/in/somya-1231/"
         >
           Somya
-        </a>
+        </a> */}
+        Uthrive Web Dev Team
         . &nbsp;All rights reserved.
       </footer>
     </div>
