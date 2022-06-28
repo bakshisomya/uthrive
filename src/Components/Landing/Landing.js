@@ -255,7 +255,6 @@ function Landing() {
               <a
                 style={{ textDecoration: "none", color: "#F77E87" }}
                 href="https://instagram.com/fluentindiawebinars?igshid=YmMyMTA2M2Y="
-                target="_blank"
               >
                 <i class="ri-instagram-fill fs-4"></i>
               </a>
