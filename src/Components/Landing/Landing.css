@@ -61,8 +61,8 @@ p {
 #courses-cards {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: stretch;
     color: #fff;
     margin-top: 4rem;
     /* text-align: center; */
@@ -70,6 +70,10 @@ p {
 
 .course-card {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
     padding: 2rem 2rem;
     margin: 0rem 2rem;
     transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
@@ -361,13 +365,13 @@ p {
     padding-bottom: 8%;
     padding-left: 5%;
     padding-right: 5%;
-    height: 286px;
+    height: 300px;
 }
 
 .carousel .control-dots {
     padding-left: 5px !important;
     outline: 0;
-    bottom: 5% !important;
+    /* bottom: 5% !important; */
 }
 
 .myCarousel h3 {
@@ -453,7 +457,7 @@ p {
         padding-bottom: 12.5%;
         padding-left: 5%;
         padding-right: 5%;
-        height: 269px;
+        height: 300px;
     }
 
     .carousel .slide img {

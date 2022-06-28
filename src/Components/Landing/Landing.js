@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import "./Landing.css";
 import Nobg from "../../assets/image/Nobg.png";
 import img from "../../assets/image/Group 7.png";
-import shirley from "../../assets/image/shirley.jpg";
-import theo from "../../assets/image/theo.jpg";
-import daniel from "../../assets/image/daniel.jpg";
+import user from "../../assets/image/user-3-fill (1).svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import darkbg from "../../assets/image/darkbg.png";
@@ -94,8 +92,7 @@ function Landing() {
             <div className="course-card">
               <h4>Uthrive Placement Prep Course</h4>
               <p>
-                Join our campus placment course and stay ahead of everyone in
-                the race for high paying jobs.
+              This course consists of Technical and HR interview classes, Mock interview sessions, Resume making session, Soft skills sessions, GD session, company specific sessions and much more. Join us today.
               </p>
               <button
                 type="button"
@@ -111,9 +108,7 @@ function Landing() {
             <div className="course-card">
               <h4>Uthrive free webinars</h4>
               <p>
-                We organise regulare free webinars on placement processes,
-                interviews and new skills to make you industry ready. Click here
-                to register for a free webinar.
+              We organise regular free webinars on Placement process, Company interviews and new skills to make you industry ready. Click here to register for a free webinar.
               </p>
               <button
                 type="button"
@@ -129,8 +124,7 @@ function Landing() {
             <div className="course-card">
               <h4>Uthrive English Speaking Course</h4>
               <p>
-                We have launched a special english speaking course for students
-                and professionals of all age groups.
+              We have launched a special Conversational English speaking course for students and professionals of all age groups. Join our course and take a step towards being confident.
               </p>
               <button
                 type="button"
@@ -163,35 +157,42 @@ function Landing() {
           interval={6100}
         >
           <div>
-            <img src={shirley} alt="" />
+            <img src={user} alt="" />
             <div className="myCarousel">
-              <h3>Shirley Fultz</h3>
-              <h4>Designer</h4>
+              <h3>Biman Das</h3>
+              <h4>Kolkata</h4>
               <p>
-                It's freeing to be able to catch up on customized news and not
-                be distracted by a social media element on the same site
+              I have been attending Uthrive English speaking classes for the last three months and I love its completely stress-free environment.
               </p>
             </div>
           </div>
           <div>
-            <img src={daniel} alt="" />
+            <img src={user} alt="" />
             <div className="myCarousel">
-              <h3>Daniel Keystone</h3>
-              <h4>Designer</h4>
+              <h3>Sulagna Bose</h3>
+              <h4>Kolkata</h4>
               <p>
-                The simple and intuitive design makes it easy for me use. I
-                highly recommend Fetch to my peers.
+              The Placement course is very wisely designed. Interview sessions and GD sessions really helped me in boosting my confidence.
               </p>
             </div>
           </div>
           <div>
-            <img src={theo} alt="" />
+            <img src={user} alt="" />
             <div className="myCarousel">
-              <h3>Theo Sorel</h3>
-              <h4>Designer</h4>
+              <h3>Soumyadeep Sikder</h3>
+              <h4>Kolkata</h4>
               <p>
-                I enjoy catching up with Fetch on my laptop, or on my phone when
-                I'm on the go!
+              In my opinion, Uthrive is one of the best platforms for spoken English. Their style is unique and Instructors are very friendly.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src={user} alt="" />
+            <div className="myCarousel">
+              <h3>Kushagradhy Saha</h3>
+              <h4>Bhopal</h4>
+              <p>
+              Uthrive’s Placement preparation course is just awesome. I learnt a lot of new things about Campus placements. 
               </p>
             </div>
           </div>
@@ -206,19 +207,7 @@ function Landing() {
           <h2>About Us</h2>
         </a>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis,
-          est vitae vulputate porttitor, ipsum felis porttitor purus, pulvinar
-          cursus lorem mauris quis velit. Quisque condimentum lorem eu nunc
-          tempus, ac viverra erat ullamcorper. Vivamus molestie sem vitae est
-          lobortis, rhoncus pellentesque ligula auctor. Vivamus ut porttitor
-          nisl, quis tincidunt nisi. Sed diam est, laoreet sit amet venenatis
-          at, pulvinar eu sem. Phasellus eu diam quis ex ullamcorper dignissim.
-          Etiam viverra sodales pellentesque. Ut orci sapien, molestie id dictum
-          et, tincidunt et eros. Vivamus quis leo nec enim imperdiet aliquet.
-          Phasellus dignissim volutpat tincidunt. Integer augue lorem, elementum
-          sit amet accumsan id, sollicitudin id arcu. Sed vehicula congue arcu.
-          Aenean mi eros, malesuada ut dapibus nec, venenatis tincidunt lectus.
-          Vivamus sed scelerisque nibh, facilisis blandit lacus.
+        Uthrive is one of its kind edtech platform founded on 10th January 2021. In the last 18 months we have guided and helped more than 1500 students excel in their career and get desired job roles in various companies. Our main goal is to provide students with access to highly affordable and Quality courses, and therefore, since our inception we have never launched any course which would cost more than Rs. 300. Our courses include Placement Preparation course, and English speaking course. Apart from these, we also organise regular free webinars for students of all age groups. Join us today and stay ahead of others in the race for Campus Placements.
         </p>
       </div>
       <footer className="container p-3 bg-light text-secondary">
@@ -256,20 +245,19 @@ function Landing() {
                 style={{ textDecoration: "none", color: "#F77E87" }}
                 href="https://instagram.com/fluentindiawebinars?igshid=YmMyMTA2M2Y="
               >
-                <i class="ri-instagram-fill fs-4"></i>
+                <i className="ri-instagram-fill fs-4"></i>
               </a>
             </span>
           </div>
         </div>
         <hr />
         Copyright &copy; 2022, Uthrive. Website Created with ❤️ by{" "}
-        {/* <a
+        <a
           className="text-secondary"
           href="https://www.linkedin.com/in/somya-1231/"
         >
           Somya
-        </a> */}
-        Uthrive Web Dev Team
+        </a>
         . &nbsp;All rights reserved.
       </footer>
     </div>
