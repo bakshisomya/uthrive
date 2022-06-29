@@ -61,8 +61,9 @@ p {
 #courses-cards {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: stretch;
+    flex-wrap: wrap;
     color: #fff;
     margin-top: 4rem;
     /* text-align: center; */
@@ -75,7 +76,7 @@ p {
     justify-content: center;
     align-items:center;
     padding: 2rem 2rem;
-    margin: 0rem 2rem;
+    margin: 2rem 2rem;
     transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
     cursor: pointer;
@@ -121,24 +122,21 @@ p {
     margin-top: 1rem;
 }
 .social{
-    width: 2rem;
+    width: 4rem;
     height: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
-    border:1px solid #F77E87;
-    border-radius:50%;
     text-align:center;
+    /* background-color: #222; */
 }
-.social:hover{
-    background-color: #776DEB
+.social i:hover{
+    color: #776DEB
 }
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
     .bodyimg {
         display: none;
     }
-
     .links {
         display: none
     }
@@ -187,6 +185,7 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        flex-wrap : nowrap;
         align-items: center;
         color: #fff;
         margin-top: 4rem;
@@ -196,7 +195,7 @@ p {
     .course-card {
         width: 50%;
         padding: 2rem 2rem;
-        margin: 2rem;
+        margin: 2rem !important;
         transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
         box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
         cursor: pointer;
@@ -293,6 +292,7 @@ p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-wrap: nowrap;
         color: #fff;
         margin-top: 4rem;
         /* text-align: center; */
@@ -301,7 +301,7 @@ p {
     .course-card {
         width: 100%;
         /* padding: 2rem 2rem; */
-        margin: 2rem;
+        margin: 2rem !important;
         transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
         box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
         cursor: pointer;

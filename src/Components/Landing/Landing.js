@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "./Landing.css";
 import Nobg from "../../assets/image/Nobg.png";
+import Nobgwebp from "../../assets/image/Nobg.webp";
 import img from "../../assets/image/Group 7.png";
+import imgwebp from "../../assets/image/Group7.webp";
 import user from "../../assets/image/user-3-fill (1).svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import darkbg from "../../assets/image/darkbg.png";
+import darkbgwebp from "../../assets/image/darkbg.webp";
 
 function Landing() {
   const [display, setdisplay] = useState("none");
@@ -14,7 +17,10 @@ function Landing() {
       <nav className="navbar sticky-top bg-light navbar-shadow">
         <div className="container-fluid d-flex justify-content-between align-center">
           {/* <img src={whitebg} style={{width:'4rem'}} alt="" /> */}
-          <img src={Nobg} style={{ width: "7rem" }} alt="" />
+          <picture>
+            <source srcSet={Nobgwebp} type="image/webp" />
+            <img src={Nobg} style={{ width: "7rem" }} alt="" />
+          </picture>
           <div className="links">
             <a href="#home">Home</a>
             <a href="#courses">Our Courses</a>
@@ -60,12 +66,15 @@ function Landing() {
               first class instructors.
             </p>
           </a>
-          <img
-            className="bodyimg"
-            src={img}
-            style={{ width: "20rem" }}
-            alt=""
-          />
+          <picture>
+            <source srcSet={imgwebp} type="image/webp" />
+            <img
+              className="bodyimg"
+              src={img}
+              style={{ width: "20rem" }}
+              alt=""
+            />
+          </picture>
         </div>
         <a
           href="tel:+91-9031672504"
@@ -92,7 +101,10 @@ function Landing() {
             <div className="course-card">
               <h4>Uthrive Placement Prep Course</h4>
               <p>
-              This course consists of Technical and HR interview classes, Mock interview sessions, Resume making session, Soft skills sessions, GD session, company specific sessions and much more. Join us today.
+                This course consists of Technical and HR interview classes, Mock
+                interview sessions, Resume making session, Soft skills sessions,
+                GD session, company specific sessions and much more. Join us
+                today.
               </p>
               <button
                 type="button"
@@ -108,7 +120,9 @@ function Landing() {
             <div className="course-card">
               <h4>Uthrive free webinars</h4>
               <p>
-              We organise regular free webinars on Placement process, Company interviews and new skills to make you industry ready. Click here to register for a free webinar.
+                We organise regular free webinars on Placement process, Company
+                interviews and new skills to make you industry ready. Click here
+                to register for a free webinar.
               </p>
               <button
                 type="button"
@@ -124,7 +138,9 @@ function Landing() {
             <div className="course-card">
               <h4>Uthrive English Speaking Course</h4>
               <p>
-              We have launched a special Conversational English speaking course for students and professionals of all age groups. Join our course and take a step towards being confident.
+                We have launched a special Conversational English speaking
+                course for students and professionals of all age groups. Join
+                our course and take a step towards being confident.
               </p>
               <button
                 type="button"
@@ -132,6 +148,24 @@ function Landing() {
                 onClick={(e) => {
                   e.preventDefault();
                   window.location.href = "https://forms.gle/HH63cVAsFiqkajES6";
+                }}
+              >
+                Register Now
+              </button>
+            </div>
+            <div className="course-card">
+              <h4>Uthrive Career Guidance Program</h4>
+              <p>
+                We provide free Career guidance to the students who are facing
+                difficulty in decision making. It may be related to choosing the
+                right college, course or anything else. We are here to help you.
+              </p>
+              <button
+                type="button"
+                className="btn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "https://forms.gle/chf8Ec2tZYTJ2tJY8";
                 }}
               >
                 Register Now
@@ -162,7 +196,9 @@ function Landing() {
               <h3>Biman Das</h3>
               <h4>Kolkata</h4>
               <p>
-              I have been attending Uthrive English speaking classes for the last three months and I love its completely stress-free environment.
+                I have been attending Uthrive English speaking classes for the
+                last three months and I love its completely stress-free
+                environment.
               </p>
             </div>
           </div>
@@ -172,7 +208,8 @@ function Landing() {
               <h3>Sulagna Bose</h3>
               <h4>Kolkata</h4>
               <p>
-              The Placement course is very wisely designed. Interview sessions and GD sessions really helped me in boosting my confidence.
+                The Placement course is very wisely designed. Interview sessions
+                and GD sessions really helped me in boosting my confidence.
               </p>
             </div>
           </div>
@@ -182,7 +219,9 @@ function Landing() {
               <h3>Soumyadeep Sikder</h3>
               <h4>Kolkata</h4>
               <p>
-              In my opinion, Uthrive is one of the best platforms for spoken English. Their style is unique and Instructors are very friendly.
+                In my opinion, Uthrive is one of the best platforms for spoken
+                English. Their style is unique and Instructors are very
+                friendly.
               </p>
             </div>
           </div>
@@ -192,7 +231,8 @@ function Landing() {
               <h3>Kushagradhy Saha</h3>
               <h4>Bhopal</h4>
               <p>
-              Uthrive’s Placement preparation course is just awesome. I learnt a lot of new things about Campus placements. 
+                Uthrive’s Placement preparation course is just awesome. I learnt
+                a lot of new things about Campus placements.
               </p>
             </div>
           </div>
@@ -207,18 +247,30 @@ function Landing() {
           <h2>About Us</h2>
         </a>
         <p>
-        Uthrive is one of its kind edtech platform founded on 10th January 2021. In the last 18 months we have guided and helped more than 1500 students excel in their career and get desired job roles in various companies. Our main goal is to provide students with access to highly affordable and Quality courses, and therefore, since our inception we have never launched any course which would cost more than Rs. 300. Our courses include Placement Preparation course, and English speaking course. Apart from these, we also organise regular free webinars for students of all age groups. Join us today and stay ahead of others in the race for Campus Placements.
+          Uthrive is one of its kind edtech platform founded on 10th January
+          2021. In the last 18 months we have guided and helped more than 1500
+          students excel in their career and get desired job roles in various
+          companies. Our main goal is to provide students with access to highly
+          affordable and Quality courses, and therefore, since our inception we
+          have never launched any course which would cost more than Rs. 300. Our
+          courses include Placement Preparation course, and English speaking
+          course. Apart from these, we also organise regular free webinars for
+          students of all age groups. Join us today and stay ahead of others in
+          the race for Campus Placements.
         </p>
       </div>
       <footer className="container p-3 bg-light text-secondary">
         <div className="footer-contains">
           <div className="smallsections">
             <a href="/" name="contact" style={{ textDecoration: "none" }}>
-              <img
-                style={{ width: "5rem" }}
-                src={darkbg}
-                alt="dark version logo"
-              />
+              <picture>
+                <source srcSet={darkbgwebp} type="image/webp" />
+                <img
+                  src={darkbg}
+                  style={{ width: "5rem" }}
+                  alt="dark version logo"
+                />
+              </picture>
             </a>
           </div>
           <div className="smallsections">
@@ -246,6 +298,12 @@ function Landing() {
                 href="https://instagram.com/fluentindiawebinars?igshid=YmMyMTA2M2Y="
               >
                 <i className="ri-instagram-fill fs-4"></i>
+              </a>
+              <a
+                style={{ textDecoration: "none", color: "#F77E87" }}
+                href="https://chat.whatsapp.com/EAAaFQblirf5D5b0UBrols"
+              >
+                <i className="ri-whatsapp-fill fs-4"></i>
               </a>
             </span>
           </div>
