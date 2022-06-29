@@ -297,7 +297,7 @@ function Landing() {
               </a>
               <a
                 style={{ textDecoration: "none", color: "#F77E87" }}
-                href="https://chat.whatsapp.com/EAAaFQblirf5D5b0UBrols"
+                href="https://wa.me/message/BH27LL7THYEDM1"
               >
                 <i className="ri-whatsapp-fill fs-4"></i>
               </a>
