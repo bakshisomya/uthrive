@@ -8,7 +8,6 @@ import user from "../../assets/image/user-3-fill (1).svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import darkbg from "../../assets/image/darkbg.png";
-import darkbgwebp from "../../assets/image/darkbg.webp";
 
 function Landing() {
   const [display, setdisplay] = useState("none");
@@ -263,14 +262,11 @@ function Landing() {
         <div className="footer-contains">
           <div className="smallsections">
             <a href="/" name="contact" style={{ textDecoration: "none" }}>
-              <picture>
-                <source srcSet={darkbgwebp} type="image/webp" />
-                <img
-                  src={darkbg}
-                  style={{ width: "5rem" }}
-                  alt="dark version logo"
-                />
-              </picture>
+              <img
+                style={{ width: "5rem" }}
+                src={darkbg}
+                alt="dark version logo"
+              />
             </a>
           </div>
           <div className="smallsections">
