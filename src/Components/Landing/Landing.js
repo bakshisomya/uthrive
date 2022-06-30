@@ -291,7 +291,7 @@ function Landing() {
             <span className="social">
               <a
                 style={{ textDecoration: "none", color: "#F77E87" }}
-                href="https://instagram.com/fluentindiawebinars?igshid=YmMyMTA2M2Y="
+                href="https://instagram.com/uthrivecommunity?igshid=YmMyMTA2M2Y="
               >
                 <i className="ri-instagram-fill fs-4"></i>
               </a>
