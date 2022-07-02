@@ -274,9 +274,9 @@ function Landing() {
             <p>Email:</p>
             <a
               style={{ textDecoration: "none", color: "#776DEB" }}
-              href="mailto:uthriveinfo@gmail.com"
+              href="mailto:publicrelations@uthrive.co.in"
             >
-              uthriveinfo@gmail.com
+              publicrelations@uthrive.co.in
             </a>
             <p>Phone:</p>
             <a
