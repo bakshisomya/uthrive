@@ -105,16 +105,16 @@ function Landing() {
                 GD session, company specific sessions and much more. Join us
                 today.
               </p>
-              <button
+              <a
                 type="button"
                 className="btn"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = "https://forms.gle/kPGt3ETC58YDQTe38";
-                }}
+                href="https://forms.gle/kPGt3ETC58YDQTe38"
+                style={{textDecoration: "none", color:"#776DEB"}}
+                target="_blank"
+                rel="noreferrer"
               >
                 Register Now
-              </button>
+              </a>
             </div>
             <div className="course-card">
               <h4>Uthrive free webinars</h4>
@@ -123,16 +123,16 @@ function Landing() {
                 interviews and new skills to make you industry ready. Click here
                 to register for a free webinar.
               </p>
-              <button
+              <a
                 type="button"
                 className="btn"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = "https://forms.gle/XEvsD3HcZfLov5Rt8";
-                }}
+                href="https://forms.gle/XEvsD3HcZfLov5Rt8"
+                style={{textDecoration: "none", color:"#776DEB"}}
+                target="_blank"
+                rel="noreferrer"
               >
                 Register Now
-              </button>
+              </a>
             </div>
             <div className="course-card">
               <h4>Uthrive English Speaking Course</h4>
@@ -141,16 +141,16 @@ function Landing() {
                 course for students and professionals of all age groups. Join
                 our course and take a step towards being confident.
               </p>
-              <button
+              <a
                 type="button"
                 className="btn"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = "https://forms.gle/HH63cVAsFiqkajES6";
-                }}
+                href="https://forms.gle/HH63cVAsFiqkajES6"
+                style={{textDecoration: "none", color:"#776DEB"}}
+                target="_blank"
+                rel="noreferrer"
               >
                 Register Now
-              </button>
+              </a>
             </div>
             <div className="course-card">
               <h4>Uthrive Career Guidance Program</h4>
@@ -159,16 +159,16 @@ function Landing() {
                 difficulty in decision making. It may be related to choosing the
                 right college, course or anything else. We are here to help you.
               </p>
-              <button
+              <a
                 type="button"
                 className="btn"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = "https://forms.gle/chf8Ec2tZYTJ2tJY8";
-                }}
+                href="https://forms.gle/chf8Ec2tZYTJ2tJY8"
+                style={{textDecoration: "none", color:"#776DEB"}}
+                target="_blank"
+                rel="noreferrer"
               >
                 Register Now
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -292,14 +292,26 @@ function Landing() {
               <a
                 style={{ textDecoration: "none", color: "#F77E87" }}
                 href="https://instagram.com/uthrivecommunity?igshid=YmMyMTA2M2Y="
+                target="_blank"
+                rel="noreferrer"
               >
                 <i className="ri-instagram-fill fs-4"></i>
               </a>
               <a
                 style={{ textDecoration: "none", color: "#F77E87" }}
                 href="https://wa.me/message/BH27LL7THYEDM1"
+                target="_blank"
+                rel="noreferrer"
               >
                 <i className="ri-whatsapp-fill fs-4"></i>
+              </a>
+              <a
+                style={{ textDecoration: "none", color: "#F77E87" }}
+                href="https://www.linkedin.com/company/uthriveteam/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="ri-linkedin-box-fill fs-4"></i>
               </a>
             </span>
           </div>
