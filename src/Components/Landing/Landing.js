@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect,useRef } from "react";
 import "./Landing.css";
 import Nobg from "../../assets/image/Nobg.png";
 import Nobgwebp from "../../assets/image/Nobg.webp";
@@ -15,6 +15,18 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 function Landing() {
   const [display, setdisplay] = useState("none");
   const [copied, setcopied] = useState(false);
+  let pc = useRef()
+
+  useEffect(() => {
+    if(document.location.hash === "#payment-contact"){
+      setTimeout(() => {
+        pc
+        .scrollIntoView({behavior: 'smooth',block:'start'})
+      }, 300);
+    }
+  }, [])
+  
+
 
   if (copied) {
     setTimeout(() => {
@@ -273,6 +285,7 @@ function Landing() {
         href="/"
         name="payment-contact"
         style={{ textDecoration: "none", color: "#F77E87" }}
+        ref={e=>pc=e}
       >
         <div className="our-courses">
           <h2 style={{ textAlign: "center" }}>Scan the QR for payment</h2>
