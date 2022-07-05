@@ -262,16 +262,16 @@ function Landing() {
           the race for Campus Placements.
         </p>
       </div>
-      <div className="our-courses">
-        <a
+      <a
           href="/"
           name="payment"
           style={{ textDecoration: "none", color: "#F77E87" }}
         >
+      <div className="our-courses">
           <h2 style={{ textAlign: "center" }}>Scan the QR for payment</h2>
-        </a>
         <img src={qr} style={{ width: "10rem" }} alt="qr code" />
       </div>
+      </a>
       <footer className="container p-3 bg-light text-secondary">
         <div className="footer-contains">
           <div className="smallsections">
