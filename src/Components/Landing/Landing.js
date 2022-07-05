@@ -4,17 +4,19 @@ import Nobg from "../../assets/image/Nobg.png";
 import Nobgwebp from "../../assets/image/Nobg.webp";
 import img from "../../assets/image/Group 7.png";
 import imgwebp from "../../assets/image/Group7.webp";
+import qr from "../../assets/image/QR_uthrive.jpg";
 import user from "../../assets/image/user-3-fill (1).svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import darkbg from "../../assets/image/darkbg.png";
+import whitebg from "../../assets/image/whitebg.png";
+import whitebgwebp from "../../assets/image/whitebg.webp";
 
 function Landing() {
   const [display, setdisplay] = useState("none");
   return (
     <div className="container mt-4 landing">
       <nav className="navbar sticky-top bg-light navbar-shadow">
-        <div className="container-fluid d-flex justify-content-between align-center">
+        <div className="container-fluid d-flex justify-content-between align-center hulu">
           {/* <img src={whitebg} style={{width:'4rem'}} alt="" /> */}
           <picture>
             <source srcSet={Nobgwebp} type="image/webp" />
@@ -25,6 +27,7 @@ function Landing() {
             <a href="#courses">Our Courses</a>
             <a href="#reviews">Reviews</a>
             <a href="#about">About Us</a>
+            <a href="#payment">Payment</a>
             <a href="#contact">Contact</a>
           </div>
           <div className="nav-menu-icon">
@@ -43,6 +46,7 @@ function Landing() {
               <a href="#courses">Our Courses</a>
               <a href="#reviews">Reviews</a>
               <a href="#about">About Us</a>
+              {/* <a href="#payment">Payment</a> */}
               <a href="#contact">Contact</a>
             </div>
           </div>
@@ -109,7 +113,7 @@ function Landing() {
                 type="button"
                 className="btn"
                 href="https://forms.gle/kPGt3ETC58YDQTe38"
-                style={{textDecoration: "none", color:"#776DEB"}}
+                style={{ textDecoration: "none", color: "#776DEB" }}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -127,7 +131,7 @@ function Landing() {
                 type="button"
                 className="btn"
                 href="https://forms.gle/XEvsD3HcZfLov5Rt8"
-                style={{textDecoration: "none", color:"#776DEB"}}
+                style={{ textDecoration: "none", color: "#776DEB" }}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -145,7 +149,7 @@ function Landing() {
                 type="button"
                 className="btn"
                 href="https://forms.gle/HH63cVAsFiqkajES6"
-                style={{textDecoration: "none", color:"#776DEB"}}
+                style={{ textDecoration: "none", color: "#776DEB" }}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -163,7 +167,7 @@ function Landing() {
                 type="button"
                 className="btn"
                 href="https://forms.gle/chf8Ec2tZYTJ2tJY8"
-                style={{textDecoration: "none", color:"#776DEB"}}
+                style={{ textDecoration: "none", color: "#776DEB" }}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -258,15 +262,29 @@ function Landing() {
           the race for Campus Placements.
         </p>
       </div>
+      <div className="our-courses">
+        <a
+          href="/"
+          name="payment"
+          style={{ textDecoration: "none", color: "#F77E87" }}
+        >
+          <h2 style={{ textAlign: "center" }}>Scan the QR for payment</h2>
+        </a>
+        <img src={qr} style={{ width: "10rem" }} alt="qr code" />
+      </div>
       <footer className="container p-3 bg-light text-secondary">
         <div className="footer-contains">
           <div className="smallsections">
             <a href="/" name="contact" style={{ textDecoration: "none" }}>
-              <img
+              {/* <img
                 style={{ width: "5rem" }}
                 src={darkbg}
                 alt="dark version logo"
-              />
+              /> */}
+              <picture>
+                <source srcSet={whitebgwebp} type="image/webp" />
+                <img src={whitebg} style={{ width: "6rem" }} alt="" />
+              </picture>
             </a>
           </div>
           <div className="smallsections">
@@ -313,6 +331,14 @@ function Landing() {
               >
                 <i className="ri-linkedin-box-fill fs-4"></i>
               </a>
+              <a
+                style={{ textDecoration: "none", color: "#F77E87" }}
+                href="https://youtube.com/channel/UCxitV5r4YyxUjJcyaGQFl-w"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="ri-youtube-fill fs-4"></i>
+              </a>
             </span>
           </div>
         </div>
@@ -321,6 +347,8 @@ function Landing() {
         <a
           className="text-secondary"
           href="https://www.linkedin.com/in/somya-1231/"
+          target="_blank"
+          rel="noreferrer"
         >
           Somya
         </a>
