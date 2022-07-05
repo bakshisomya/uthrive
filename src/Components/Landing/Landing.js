@@ -4,15 +4,23 @@ import Nobg from "../../assets/image/Nobg.png";
 import Nobgwebp from "../../assets/image/Nobg.webp";
 import img from "../../assets/image/Group 7.png";
 import imgwebp from "../../assets/image/Group7.webp";
-import qr from "../../assets/image/QR_uthrive.jpg";
+import qr from "../../assets/image/qr-uthrive.jpeg";
 import user from "../../assets/image/user-3-fill (1).svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import whitebg from "../../assets/image/whitebg.png";
 import whitebgwebp from "../../assets/image/whitebg.webp";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 function Landing() {
   const [display, setdisplay] = useState("none");
+  const [copied, setcopied] = useState(false);
+
+  if (copied) {
+    setTimeout(() => {
+      setcopied(false);
+    }, 1500);
+  }
   return (
     <div className="container mt-4 landing">
       <nav className="navbar sticky-top bg-light navbar-shadow">
@@ -27,8 +35,7 @@ function Landing() {
             <a href="#courses">Our Courses</a>
             <a href="#reviews">Reviews</a>
             <a href="#about">About Us</a>
-            <a href="#payment">Payment</a>
-            <a href="#contact">Contact</a>
+            <a href="#payment-contact">Payment & Contact</a>
           </div>
           <div className="nav-menu-icon">
             <i
@@ -47,7 +54,7 @@ function Landing() {
               <a href="#reviews">Reviews</a>
               <a href="#about">About Us</a>
               {/* <a href="#payment">Payment</a> */}
-              <a href="#contact">Contact</a>
+              <a href="#payment-contact">Payment & Contact</a>
             </div>
           </div>
         </div>
@@ -263,29 +270,60 @@ function Landing() {
         </p>
       </div>
       <a
-          href="/"
-          name="payment"
-          style={{ textDecoration: "none", color: "#F77E87" }}
-        >
-      <div className="our-courses">
+        href="/"
+        name="payment-contact"
+        style={{ textDecoration: "none", color: "#F77E87" }}
+      >
+        <div className="our-courses">
           <h2 style={{ textAlign: "center" }}>Scan the QR for payment</h2>
-        <img src={qr} style={{ width: "10rem" }} alt="qr code" />
-      </div>
+          <img src={qr} style={{ width: "10rem" }} alt="qr code" />
+          <h5 style={{ textAlign: "center", color: "#323232" }}>OR</h5>
+          <h5 style={{ textAlign: "center", color: "#323232" }}>
+            Pay using UPI ID -{" "}
+          </h5>
+          <h6 style={{ textAlign: "center", color: "#323232" }}>
+            7903654279@ybl
+          </h6>
+          <CopyToClipboard text="7903654279@ybl">
+            <button
+              className="mt-2"
+              onClick={(e) => {
+                e.preventDefault();
+                setcopied(true);
+              }}
+              style={{
+                display: "inline-block",
+                textDecoration: "none",
+                color: "#776DEB",
+                border: "none",
+                backgroundColor: "transparent",
+                borderRadius: ".3rem",
+              }}
+            >
+              <i className="ri-clipboard-fill fs-4"></i>
+            </button>
+          </CopyToClipboard>
+          {copied ? (
+            <div className="alert alert-success mt-2" role="alert">
+              Copied!
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
       </a>
       <footer className="container p-3 bg-light text-secondary">
         <div className="footer-contains">
           <div className="smallsections">
-            <a href="/" name="contact" style={{ textDecoration: "none" }}>
-              {/* <img
+            {/* <img
                 style={{ width: "5rem" }}
                 src={darkbg}
                 alt="dark version logo"
               /> */}
-              <picture>
-                <source srcSet={whitebgwebp} type="image/webp" />
-                <img src={whitebg} style={{ width: "6rem" }} alt="" />
-              </picture>
-            </a>
+            <picture>
+              <source srcSet={whitebgwebp} type="image/webp" />
+              <img src={whitebg} style={{ width: "6rem" }} alt="" />
+            </picture>
           </div>
           <div className="smallsections">
             <h5 className="text-dark">Contact Us</h5>
