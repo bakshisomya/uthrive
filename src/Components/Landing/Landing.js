@@ -90,12 +90,12 @@ function Landing() {
                 onClick={() => setdisplay("none")}
                 className="ri-close-line"
               ></i>
-              <a href="#home">Home</a>
-              <a href="#courses">Our Courses</a>
-              <a href="#reviews">Reviews</a>
-              <a href="#about">About Us</a>
+              <a onClick={()=>setdisplay('none')} href="#home">Home</a>
+              <a onClick={()=>setdisplay('none')} href="#courses">Our Courses</a>
+              <a onClick={()=>setdisplay('none')} href="#reviews">Reviews</a>
+              <a onClick={()=>setdisplay('none')} href="#about">About Us</a>
               {/* <a href="#payment">Payment</a> */}
-              <a href="#payment-contact">Payment & Contact</a>
+              <a onClick={()=>setdisplay('none')} href="#payment-contact">Payment & Contact</a>
             </div>
             </div>
           </div>
