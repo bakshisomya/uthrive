@@ -16,11 +16,40 @@ function Landing() {
   const [display, setdisplay] = useState("none");
   const [copied, setcopied] = useState(false);
   let pc = useRef()
+  let home = useRef()
+  let about = useRef()
+  let courses = useRef()
+  let reviews = useRef()
 
   useEffect(() => {
     if(document.location.hash === "#payment-contact"){
       setTimeout(() => {
         pc
+        .scrollIntoView({behavior: 'smooth',block:'start'})
+      }, 300);
+    }
+    if(document.location.hash === "#home"){
+      setTimeout(() => {
+        home
+        .scrollIntoView({behavior: 'smooth',block:'start'})
+      }, 300);
+
+    }
+    if(document.location.hash === "#courses"){
+      setTimeout(() => {
+        courses
+        .scrollIntoView({behavior: 'smooth',block:'start'})
+      }, 300);
+    }
+    if(document.location.hash === "#reviews"){
+      setTimeout(() => {
+        reviews
+        .scrollIntoView({behavior: 'smooth',block:'start'})
+      }, 300);
+    }
+    if(document.location.hash === "#about"){
+      setTimeout(() => {
+        about
         .scrollIntoView({behavior: 'smooth',block:'start'})
       }, 300);
     }
@@ -49,11 +78,11 @@ function Landing() {
             <a href="#about">About Us</a>
             <a href="#payment-contact">Payment & Contact</a>
           </div>
-          <div className="nav-menu-icon">
+            <div className="nav-mobile">
             <i
               style={{ cursor: "pointer" }}
               onClick={() => setdisplay("flex")}
-              className="ri-menu-3-line"
+              className="ri-menu-3-line ham"
             ></i>
             <div style={{ display: display }} className="menu-links">
               <i
@@ -68,12 +97,13 @@ function Landing() {
               {/* <a href="#payment">Payment</a> */}
               <a href="#payment-contact">Payment & Contact</a>
             </div>
+            </div>
           </div>
-        </div>
       </nav>
       <div className="container mt-5">
         <div className="top">
           <a
+          ref={e=>home=e}
             href="/"
             name="home"
             style={{ textDecoration: "none", color: "white" }}
@@ -113,6 +143,7 @@ function Landing() {
         </a>
         <div className="our-courses">
           <a
+           ref={e=>courses=e}
             href="/"
             name="courses"
             style={{ textDecoration: "none", color: "#F77E87" }}
@@ -198,6 +229,7 @@ function Landing() {
       </div>
       <div className="our-courses">
         <a
+         ref={e=>reviews=e}
           href="/"
           name="reviews"
           style={{ textDecoration: "none", color: "#F77E87" }}
@@ -262,6 +294,7 @@ function Landing() {
       </div>
       <div className="our-courses">
         <a
+         ref={e=>about=e}
           href="/"
           name="about"
           style={{ textDecoration: "none", color: "#F77E87" }}
