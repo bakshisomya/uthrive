@@ -15,6 +15,18 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 function Landing() {
   const [display, setdisplay] = useState("none");
   const [copied, setcopied] = useState(false);
+  const [colour, setcolour] = useState(false);
+  const changeColor = ()=>{
+    if(window.scrollY >= 90){
+      setcolour(true)
+    }
+    else{
+      setcolour(false)
+    }
+  }
+
+  window.addEventListener("scroll", changeColor)
+  
   let pc = useRef()
   let home = useRef()
   let about = useRef()
@@ -64,7 +76,7 @@ function Landing() {
   }
   return (
     <div className="container mt-4 landing">
-      <nav className="navbar sticky-top bg-light navbar-shadow">
+      <nav className={colour? "navbar sticky-top bg-light navbar-shadow": "navbar sticky-top"}>
         <div className="container-fluid d-flex justify-content-between align-center hulu">
           {/* <img src={whitebg} style={{width:'4rem'}} alt="" /> */}
           <picture>
