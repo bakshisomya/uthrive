@@ -15,6 +15,8 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 function Landing() {
   const [display, setdisplay] = useState("none");
   const [copied, setcopied] = useState(false);
+
+  //change nav color on scrolling
   const [colour, setcolour] = useState(false);
   const changeColor = ()=>{
     if(window.scrollY >= 90){
@@ -24,9 +26,9 @@ function Landing() {
       setcolour(false)
     }
   }
-
   window.addEventListener("scroll", changeColor)
   
+  //for animations
   let pc = useRef()
   let home = useRef()
   let about = useRef()
