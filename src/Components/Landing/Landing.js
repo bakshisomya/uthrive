@@ -1,4 +1,4 @@
-import React, { useState,useEffect,useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Landing.css";
 import Nobg from "../../assets/image/Nobg.png";
 import Nobgwebp from "../../assets/image/Nobg.webp";
@@ -18,58 +18,49 @@ function Landing() {
 
   //change nav color on scrolling
   const [colour, setcolour] = useState(false);
-  const changeColor = ()=>{
-    if(window.scrollY >= 90){
-      setcolour(true)
+  const changeColor = () => {
+    if (window.scrollY >= 90) {
+      setcolour(true);
+    } else {
+      setcolour(false);
     }
-    else{
-      setcolour(false)
-    }
-  }
-  window.addEventListener("scroll", changeColor)
-  
+  };
+  window.addEventListener("scroll", changeColor);
+
   //for animations
-  let pc = useRef()
-  let home = useRef()
-  let about = useRef()
-  let courses = useRef()
-  let reviews = useRef()
+  let pc = useRef();
+  let home = useRef();
+  let about = useRef();
+  let courses = useRef();
+  let reviews = useRef();
 
   useEffect(() => {
-    if(document.location.hash === "#payment-contact"){
+    if (document.location.hash === "#payment-contact") {
       setTimeout(() => {
-        pc
-        .scrollIntoView({behavior: 'smooth',block:'start'})
+        pc.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 300);
     }
-    if(document.location.hash === "#home"){
+    if (document.location.hash === "#home") {
       setTimeout(() => {
-        home
-        .scrollIntoView({behavior: 'smooth',block:'start'})
-      }, 300);
-
-    }
-    if(document.location.hash === "#courses"){
-      setTimeout(() => {
-        courses
-        .scrollIntoView({behavior: 'smooth',block:'start'})
+        home.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 300);
     }
-    if(document.location.hash === "#reviews"){
+    if (document.location.hash === "#courses") {
       setTimeout(() => {
-        reviews
-        .scrollIntoView({behavior: 'smooth',block:'start'})
+        courses.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 300);
     }
-    if(document.location.hash === "#about"){
+    if (document.location.hash === "#reviews") {
       setTimeout(() => {
-        about
-        .scrollIntoView({behavior: 'smooth',block:'start'})
+        reviews.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 300);
     }
-  }, [])
-  
-
+    if (document.location.hash === "#about") {
+      setTimeout(() => {
+        about.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 300);
+    }
+  }, []);
 
   if (copied) {
     setTimeout(() => {
@@ -78,8 +69,14 @@ function Landing() {
   }
   return (
     <div className="container mt-4 landing">
-      <nav className={colour? "navbar sticky-top bg-light navbar-shadow": "navbar sticky-top"}>
-        <div className="container-fluid d-flex justify-content-between align-center hulu">
+      <nav
+        className={
+          colour
+            ? "navbar sticky-top bg-light navbar-shadow"
+            : "navbar sticky-top"
+        }
+      >
+        <div className="container-fluid d-flex justify-content-between align-center">
           {/* <img src={whitebg} style={{width:'4rem'}} alt="" /> */}
           <picture>
             <source srcSet={Nobgwebp} type="image/webp" />
@@ -92,7 +89,7 @@ function Landing() {
             <a href="#about">About Us</a>
             <a href="#payment-contact">Payment & Contact</a>
           </div>
-            <div className="nav-mobile">
+          <div className="nav-mobile">
             <i
               style={{ cursor: "pointer" }}
               onClick={() => setdisplay("flex")}
@@ -104,19 +101,29 @@ function Landing() {
                 onClick={() => setdisplay("none")}
                 className="ri-close-line"
               ></i>
-              <a onClick={()=>setdisplay('none')} href="#home">Home</a>
-              <a onClick={()=>setdisplay('none')} href="#courses">Our Courses</a>
-              <a onClick={()=>setdisplay('none')} href="#reviews">Reviews</a>
-              <a onClick={()=>setdisplay('none')} href="#about">About Us</a>
+              <a onClick={() => setdisplay("none")} href="#home">
+                Home
+              </a>
+              <a onClick={() => setdisplay("none")} href="#courses">
+                Our Courses
+              </a>
+              <a onClick={() => setdisplay("none")} href="#reviews">
+                Reviews
+              </a>
+              <a onClick={() => setdisplay("none")} href="#about">
+                About Us
+              </a>
               {/* <a href="#payment">Payment</a> */}
-              <a onClick={()=>setdisplay('none')} href="#payment-contact">Payment & Contact</a>
-            </div>
+              <a onClick={() => setdisplay("none")} href="#payment-contact">
+                Payment & Contact
+              </a>
             </div>
           </div>
+        </div>
       </nav>
       <div className="container mt-5">
         <div className="top">
-        <picture>
+          <picture>
             <source srcSet={imgwebp} type="image/webp" />
             <img
               className="bodyimgmob"
@@ -127,20 +134,32 @@ function Landing() {
             {/* Photo by <a href="https://unsplash.com/@icons8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Icons8 Team</a> on <a href="https://unsplash.com/s/photos/student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
           </picture>
           <a
-          ref={e=>home=e}
+            ref={(e) => (home = e)}
             href="/"
             name="home"
             style={{ textDecoration: "none", color: "white" }}
           >
-            <p className="mt-5 fs-1">
-              Want to learn Fluent English or <br />
-              Want to ace in college placements? <br />
-              Don't Worry. We have got you covered!
+            <p className="fs-1">
+              Invest in your <span style={{ color: "#F77E87" }}>future</span>{" "}
+              with us. Brush up your skills,
+              <br />
+              prepare for your{" "}
+              <span style={{ color: "#F77E87" }}>future job</span> with us.
             </p>
-            <p className="mt-5">
+            <p>
               Join us at Uthrive and polish your skills with the <br />
               first class instructors.
             </p>
+            <button
+              type="button"
+              className="btn-hover color-1"
+              onClick={(e)=>{
+                e.preventDefault();
+                courses.scrollIntoView({ behavior: "smooth", block: "start" })
+              }}
+            >
+              Get Started
+            </button>
           </a>
           <picture>
             <source srcSet={imgwebp} type="image/webp" />
@@ -153,22 +172,9 @@ function Landing() {
             {/* Photo by <a href="https://unsplash.com/@icons8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Icons8 Team</a> on <a href="https://unsplash.com/s/photos/student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
           </picture>
         </div>
-        <a
-          href="tel:+91-9031672504"
-          className="mt-3 px-1 py-2"
-          style={{
-            display: "inline-block",
-            textDecoration: "none",
-            color: "#776DEB",
-            border: "1px solid #776DEB",
-            borderRadius: ".3rem",
-          }}
-        >
-          Get Started
-        </a>
         <div className="our-courses">
           <a
-           ref={e=>courses=e}
+            ref={(e) => (courses = e)}
             href="/"
             name="courses"
             style={{ textDecoration: "none", color: "#F77E87" }}
@@ -254,7 +260,7 @@ function Landing() {
       </div>
       <div className="our-courses">
         <a
-         ref={e=>reviews=e}
+          ref={(e) => (reviews = e)}
           href="/"
           name="reviews"
           style={{ textDecoration: "none", color: "#F77E87" }}
@@ -319,7 +325,7 @@ function Landing() {
       </div>
       <div className="our-courses">
         <a
-         ref={e=>about=e}
+          ref={(e) => (about = e)}
           href="/"
           name="about"
           style={{ textDecoration: "none", color: "#F77E87" }}
@@ -343,7 +349,7 @@ function Landing() {
         href="/"
         name="payment-contact"
         style={{ textDecoration: "none", color: "#F77E87" }}
-        ref={e=>pc=e}
+        ref={(e) => (pc = e)}
       >
         <div className="our-courses">
           <h2 style={{ textAlign: "center" }}>Scan the QR for payment</h2>
