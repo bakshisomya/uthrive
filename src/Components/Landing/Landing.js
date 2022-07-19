@@ -2,8 +2,8 @@ import React, { useState,useEffect,useRef } from "react";
 import "./Landing.css";
 import Nobg from "../../assets/image/Nobg.png";
 import Nobgwebp from "../../assets/image/Nobg.webp";
-import img from "../../assets/image/Group 7.png";
-import imgwebp from "../../assets/image/Group7.webp";
+import img from "../../assets/image/Group 4 (1).png";
+import imgwebp from "../../assets/image/Group 4 (1).webp";
 import qr from "../../assets/image/qr-uthrive.jpeg";
 import user from "../../assets/image/user-3-fill (1).svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -123,9 +123,10 @@ function Landing() {
             <img
               className="bodyimg"
               src={img}
-              style={{ width: "20rem" }}
+              style={{ width: "35rem" }}
               alt=""
             />
+            {/* Photo by <a href="https://unsplash.com/@icons8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Icons8 Team</a> on <a href="https://unsplash.com/s/photos/student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
           </picture>
         </div>
         <a
