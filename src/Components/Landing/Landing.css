@@ -131,9 +131,21 @@ p {
 .social i:hover{
     color: #776DEB
 }
+.bodyimgmob {
+    display: none;
+}
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bodyimgmob{
+        display: initial;
+    }
     .bodyimg {
-        display: none;
+        display:none
     }
     .links {
         display: none
@@ -236,6 +248,15 @@ p {
 }
 
 @media only screen and (max-width:768px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bodyimgmob{
+        display: initial;
+    }
     .bodyimg {
         display: none;
     }

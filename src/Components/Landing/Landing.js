@@ -102,6 +102,16 @@ function Landing() {
       </nav>
       <div className="container mt-5">
         <div className="top">
+        <picture>
+            <source srcSet={imgwebp} type="image/webp" />
+            <img
+              className="bodyimgmob"
+              src={img}
+              style={{ width: "23rem" }}
+              alt=""
+            />
+            {/* Photo by <a href="https://unsplash.com/@icons8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Icons8 Team</a> on <a href="https://unsplash.com/s/photos/student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
+          </picture>
           <a
           ref={e=>home=e}
             href="/"
