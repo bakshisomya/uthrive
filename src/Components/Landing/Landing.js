@@ -144,7 +144,7 @@ function Landing() {
               with us. Brush up your skills,
               <br />
               prepare for your{" "}
-              <span style={{ color: "#F77E87" }}>future job</span> with us.
+              <span style={{ color: "#F77E87" }}>Career</span> with us.
             </p>
             <p>
               Join us at Uthrive and polish your skills with the <br />
