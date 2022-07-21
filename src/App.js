@@ -1,16 +1,21 @@
-import React, { Suspense } from "react";
-// import Landing from "./Components/Landing/Landing";
-import Loading from "./Components/Loading/Loading";
-
-const Landing = React.lazy(()=> import("./Components/Landing/Landing"))
+import React,{useState} from "react";
+import Landing from "./Components/Landing/Landing";
 
 function App() {
+  //this loader shows when only html is loaded and react is not rendered
+  //for this you need to put the image in index.html
+  const [loading, setloading] = useState(true);
+  const spinner = document.getElementById('loading')
+  if(spinner){
+    setTimeout(() => {
+      spinner.style.display = 'none';
+      setloading(false)
+    }, 2000);
+  }
   return (
-    <div>
-      <Suspense fallback={<Loading/>}>
-        <Landing />
-      </Suspense>
-    </div>
+    !loading && (<div>
+      <Landing/>
+      </div>)
   );
 }
 
