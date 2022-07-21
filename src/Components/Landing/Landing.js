@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Landing.css";
 import Nobg from "../../assets/image/Nobg.png";
 import Nobgwebp from "../../assets/image/Nobg.webp";
-import img from "../../assets/image/Group 4 (1).png";
-import imgwebp from "../../assets/image/Group 4 (1).webp";
+import img from "../../assets/image/girl.png";
+import imgwebp from "../../assets/image/girl.webp";
 import qr from "../../assets/image/qr-uthrive.jpeg";
 import user from "../../assets/image/user-3-fill (1).svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -68,7 +68,8 @@ function Landing() {
     }, 1500);
   }
   return (
-    <div className="container mt-4 landing">
+    <div className="pt-4 landing">
+      <div className="container overlay">
       <nav
         className={
           colour
@@ -144,7 +145,7 @@ function Landing() {
               with us. Brush up your skills,
               <br />
               prepare for your{" "}
-              <span style={{ color: "#F77E87" }}>Career</span> with us.
+              <span style={{ color: "#F77E87" }}>Career.</span>
             </p>
             <p>
               Join us at Uthrive and polish your skills with the <br />
@@ -152,7 +153,7 @@ function Landing() {
             </p>
             <button
               type="button"
-              className="btn-hover color-1"
+              className="btn-hover color-1 mt-3"
               onClick={(e)=>{
                 e.preventDefault();
                 courses.scrollIntoView({ behavior: "smooth", block: "start" })
@@ -469,6 +470,7 @@ function Landing() {
         </a>
         . &nbsp;All rights reserved.
       </footer>
+      </div>
     </div>
   );
 }
