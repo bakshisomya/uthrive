@@ -390,7 +390,7 @@ function Landing() {
           )}
         </div>
       </a>
-      <footer className="container p-3 bg-light text-secondary">
+      <footer className="p-3 bg-light text-secondary">
         <div className="footer-contains">
           <div className="smallsections">
             {/* <img
