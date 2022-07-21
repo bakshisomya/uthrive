@@ -185,7 +185,7 @@ function Landing() {
           <div id="courses-cards">
             <div className="course-card">
               <h4>Uthrive Placement Prep Course</h4>
-              <p>
+              <p style={{textAlign:'justify',textJustify:'inter-word'}}>
                 This course consists of Technical and HR interview classes, Mock
                 interview sessions, Resume making session, Soft skills sessions,
                 GD session, company specific sessions and much more. Join us
@@ -204,7 +204,7 @@ function Landing() {
             </div>
             <div className="course-card">
               <h4>Uthrive free webinars</h4>
-              <p>
+              <p style={{textAlign:'justify',textJustify:'inter-word'}}>
                 We organise regular free webinars on Placement process, Company
                 interviews and new skills to make you industry ready. Click here
                 to register for a free webinar.
@@ -222,7 +222,7 @@ function Landing() {
             </div>
             <div className="course-card">
               <h4>Uthrive English Speaking Course</h4>
-              <p>
+              <p style={{textAlign:'justify',textJustify:'inter-word'}}>
                 We have launched a special Conversational English speaking
                 course for students and professionals of all age groups. Join
                 our course and take a step towards being confident.
@@ -240,7 +240,7 @@ function Landing() {
             </div>
             <div className="course-card">
               <h4>Uthrive Career Guidance Program</h4>
-              <p>
+              <p style={{textAlign:'justify',textJustify:'inter-word'}}>
                 We provide free Career guidance to the students who are facing
                 difficulty in decision making. It may be related to choosing the
                 right college, course or anything else. We are here to help you.
@@ -333,7 +333,7 @@ function Landing() {
         >
           <h2>About Us</h2>
         </a>
-        <p>
+        <p style={{textAlign:'justify',textJustify:'inter-word'}} className="px-lg-5">
           Uthrive is one of its kind edtech platform founded on 10th January
           2021. In the last 18 months we have guided and helped more than 1500
           students excel in their career and get desired job roles in various
