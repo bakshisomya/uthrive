@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Landing.css";
 import Nobg from "../../assets/image/Nobg.png";
 import Nobgwebp from "../../assets/image/Nobg.webp";
-import img from "../../assets/image/girl.png";
-import imgwebp from "../../assets/image/girl.webp";
+import img from "../../assets/image/illus.png";
+// import imgwebp from "../../assets/image/girl.webp";
 import qr from "../../assets/image/qr-uthrive.jpeg";
 import user from "../../assets/image/user-3-fill (1).svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -125,11 +125,11 @@ function Landing() {
       <div className="container mt-5">
         <div className="top">
           <picture>
-            <source srcSet={imgwebp} type="image/webp" />
+            {/* <source srcSet={imgwebp} type="image/webp" /> */}
             <img
               className="bodyimgmob"
               src={img}
-              style={{ width: "23rem" }}
+              style={{ width: "20rem" }}
               alt=""
             />
             {/* Photo by <a href="https://unsplash.com/@icons8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Icons8 Team</a> on <a href="https://unsplash.com/s/photos/student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
@@ -163,11 +163,11 @@ function Landing() {
             </button>
           </a>
           <picture>
-            <source srcSet={imgwebp} type="image/webp" />
+            {/* <source srcSet={imgwebp} type="image/webp" /> */}
             <img
               className="bodyimg"
               src={img}
-              style={{ width: "35rem" }}
+              style={{ width: "30rem" }}
               alt=""
             />
             {/* Photo by <a href="https://unsplash.com/@icons8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Icons8 Team</a> on <a href="https://unsplash.com/s/photos/student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
