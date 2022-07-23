@@ -144,7 +144,10 @@ p {
 .navbar-shadow {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.075)
 }
-
+footer{
+    padding-left : 5rem;
+    padding-right : 5rem;
+}
 .footer-contains {
     width: 100%;
     display: flex;
@@ -284,7 +287,10 @@ p {
         transform: scale(1.05);
         box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
     }
-
+    footer{
+        padding-left : 0;
+        padding-right : 0;
+    }
     .footer-contains {
         width: 100%;
         display: flex;
@@ -396,7 +402,10 @@ p {
         transform: scale(1.05);
         box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
     }
-
+    footer{
+        padding-left : 0;
+        padding-right: 0;
+    }
     .footer-contains {
         width: 100%;
         display: flex;

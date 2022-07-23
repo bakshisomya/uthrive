@@ -69,15 +69,14 @@ function Landing() {
   }
   return (
     <div className="pt-4 landing">
-      <div className="container overlay">
-      <nav
+    <nav
         className={
           colour
-            ? "navbar sticky-top bg-light navbar-shadow"
-            : "navbar sticky-top"
+            ? "navbar px-lg-5 sticky-top bg-light navbar-shadow"
+            : "navbar px-lg-5 sticky-top"
         }
       >
-        <div className="container-fluid d-flex justify-content-between align-center">
+        <div className="container d-flex justify-content-between align-center">
           {/* <img src={whitebg} style={{width:'4rem'}} alt="" /> */}
           <picture>
             <source srcSet={Nobgwebp} type="image/webp" />
@@ -122,8 +121,9 @@ function Landing() {
           </div>
         </div>
       </nav>
+      <div className="container overlay">
       <div className="container mt-5">
-        <div className="top">
+        <div className="top text-center text-lg-start">
           <picture>
             {/* <source srcSet={imgwebp} type="image/webp" /> */}
             <img
@@ -140,7 +140,7 @@ function Landing() {
             name="home"
             style={{ textDecoration: "none", color: "white" }}
           >
-            <p className="fs-1">
+            <p className="fs-1 mt-5">
               Invest in your <span style={{ color: "#F77E87" }}>future</span>{" "}
               with us. Brush up your skills,
               <br />
@@ -390,7 +390,8 @@ function Landing() {
           )}
         </div>
       </a>
-      <footer className="p-3 bg-light text-secondary">
+      </div>
+      <footer className="bg-light text-secondary">
         <div className="footer-contains">
           <div className="smallsections">
             {/* <img
@@ -458,7 +459,9 @@ function Landing() {
             </span>
           </div>
         </div>
+        <div className="px-lg-4 p-4">
         <hr />
+        <p className="text-secondary font-monospace px-lg-4">
         Copyright &copy; 2022, Uthrive. Website Created with ❤️ by{" "}
         <a
           className="text-secondary"
@@ -468,9 +471,9 @@ function Landing() {
         >
           Somya
         </a>
-        . &nbsp;All rights reserved.
+        . &nbsp;All rights reserved.</p>
+        </div>
       </footer>
-      </div>
     </div>
   );
 }
