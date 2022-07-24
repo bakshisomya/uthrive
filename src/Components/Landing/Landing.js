@@ -15,7 +15,7 @@ import whitebgwebp from "../../assets/image/whitebg.webp";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 function Landing() {
-  const [display, setdisplay] = useState("none");
+  // const [display, setdisplay] = useState("none");
   const [copied, setcopied] = useState(false);
 
   //change nav color on scrolling
@@ -78,7 +78,7 @@ function Landing() {
             : "navbar navbar-expand-lg px-lg-5 sticky-top"
         }
       >
-        <div className="container d-flex justify-content-end">
+        <div className="container">
           {/* <img src={whitebg} style={{width:'4rem'}} alt="" /> */}
           <picture>
             <source srcSet={Nobgwebp} type="image/webp" />
@@ -95,24 +95,53 @@ function Landing() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse links" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#courses">Our Courses</a>
-          </li>
-          <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#reviews">Reviews</a>
-          </li>
-          <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#about">About Us</a>
-          </li>
-          <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#payment-contact">Payment & Contact</a>
-          </li>
-          </ul>
+          <div
+            className="collapse navbar-collapse links"
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#home">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href="#courses"
+                >
+                  Our Courses
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href="#reviews"
+                >
+                  Reviews
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href="#about"
+                >
+                  About Us
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href="#payment-contact"
+                >
+                  Payment & Contact
+                </a>
+              </li>
+            </ul>
           </div>
           {/* mobile version of nav */}
           {/* <div className="nav-mobile">
@@ -139,12 +168,12 @@ function Landing() {
               <a onClick={() => setdisplay("none")} href="#about">
                 About Us
               </a> */}
-              {/* <a href="#payment">Payment</a> */}
-              {/* <a onClick={() => setdisplay("none")} href="#payment-contact">
+          {/* <a href="#payment">Payment</a> */}
+          {/* <a onClick={() => setdisplay("none")} href="#payment-contact">
                 Payment & Contact
               </a>
             </div> */}
-          </div>
+        </div>
       </nav>
       <div className="container overlay">
         <div className="container mt-5">
@@ -212,7 +241,7 @@ function Landing() {
             </a>
             <picture>
               <source srcSet={ourcourseswebp} type="image/webp" />
-              <img src={ourcourses} style={{ width: "16rem" }} alt="" />
+              <img src={ourcourses} style={{ width: "26rem" }} alt="" />
             </picture>
             <div id="courses-cards">
               <div className="course-card">
@@ -312,47 +341,86 @@ function Landing() {
             <div>
               <img src={user} alt="" />
               <div className="myCarousel">
-                <h3>Biman Das</h3>
-                <h4>Kolkata</h4>
+                <h3>Sai Lokesh</h3>
+                <h4>NIT Durgapur</h4>
                 <p>
-                  I have been attending Uthrive English speaking classes for the
-                  last three months and I love its completely stress-free
-                  environment.
+                  The contents and the course instructor are excellent. The
+                  activities conducted in the sessions improved our creativity.
+                  The team motivated me to prepare for my placements.
                 </p>
               </div>
             </div>
             <div>
               <img src={user} alt="" />
               <div className="myCarousel">
-                <h3>Sulagna Bose</h3>
-                <h4>Kolkata</h4>
+                <h3>Sivaji Ganesh Naidu</h3>
+                <h4>NIT Durgapur</h4>
                 <p>
-                  The Placement course is very wisely designed. Interview
-                  sessions and GD sessions really helped me in boosting my
-                  confidence.
+                  The course is very useful. For me, the Resume session was of
+                  great help. I feel the GD sessions conducted by Uthrive are
+                  also very unique. The course was completely stress free so I
+                  enjoyed a lot.
                 </p>
               </div>
             </div>
             <div>
               <img src={user} alt="" />
               <div className="myCarousel">
-                <h3>Soumyadeep Sikder</h3>
-                <h4>Kolkata</h4>
+                <h3>Nalamasu rahul</h3>
+                <h4>NIT Durgapur</h4>
                 <p>
-                  In my opinion, Uthrive is one of the best platforms for spoken
-                  English. Their style is unique and Instructors are very
-                  friendly.
+                  I was totally confused and not aware about the placement
+                  process of companies so I registered for Uthrive placement
+                  course. The GD sessions are my favourite. I also loved the
+                  mock interview feature in the course.
                 </p>
               </div>
             </div>
             <div>
               <img src={user} alt="" />
               <div className="myCarousel">
-                <h3>Kushagradhy Saha</h3>
-                <h4>Bhopal</h4>
+                <h3>Sandeep Kumar</h3>
+                <h4>NIT Durgapur</h4>
                 <p>
-                  Uthrive’s Placement preparation course is just awesome. I
-                  learnt a lot of new things about Campus placements.
+                  In the course I learnt about the TR and HR interviews. I think
+                  the course is an eyeopener before the campus placements.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src={user} alt="" />
+              <div className="myCarousel">
+                <h3>Prasad B.</h3>
+                <h4>NIT Durgapur</h4>
+                <p>
+                  I have been doing the Uthrive Placement course for the last
+                  two weeks. The course provides complete placement guidance and
+                  helps to build communication skills for interviews and GDs.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src={user} alt="" />
+              <div className="myCarousel">
+                <h3>Aniket Panigrahi</h3>
+                <h4>NIT Durgapur</h4>
+                <p>
+                  I am very impressed with the overall course structure at
+                  Uthrive. I feel the GD sesions were really great. I am looking
+                  forward to the mock interviews.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src={user} alt="" />
+              <div className="myCarousel">
+                <h3>Harsh Raj</h3>
+                <h4>NIT Durgapur</h4>
+                <p>
+                  I joined Uthrive placement prep course. The instructor was
+                  really great. This course provides complete guidance for on
+                  campus as well as off campus placements. I learnt a lot in my
+                  two weeks at Uthrive.
                 </p>
               </div>
             </div>
