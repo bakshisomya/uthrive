@@ -78,8 +78,7 @@ function Landing() {
             : "navbar navbar-expand-lg px-lg-5 sticky-top"
         }
       >
-        <div className="container">
-          {/* <img src={whitebg} style={{width:'4rem'}} alt="" /> */}
+        <div className="container d-flex align-items-center">
           <picture>
             <source srcSet={Nobgwebp} type="image/webp" />
             <img src={Nobg} style={{ width: "7rem" }} alt="" />
@@ -96,10 +95,10 @@ function Landing() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse navbar-collapse links"
+            className="collapse navbar-collapse"
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav w-100 justify-content-end links">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#home">
                   Home
@@ -143,8 +142,8 @@ function Landing() {
               </li>
             </ul>
           </div>
-          {/* mobile version of nav */}
-          {/* <div className="nav-mobile">
+          {/* mobile version of nav
+          <div className="nav-mobile">
             <i
               style={{ cursor: "pointer" }}
               onClick={() => setdisplay("flex")}
@@ -155,7 +154,7 @@ function Landing() {
                 style={{ cursor: "pointer" }}
                 onClick={() => setdisplay("none")}
                 className="ri-close-line"
-              ></i>
+               ></i>
               <a onClick={() => setdisplay("none")} href="#home">
                 Home
               </a>
@@ -167,12 +166,13 @@ function Landing() {
               </a>
               <a onClick={() => setdisplay("none")} href="#about">
                 About Us
-              </a> */}
-          {/* <a href="#payment">Payment</a> */}
-          {/* <a onClick={() => setdisplay("none")} href="#payment-contact">
+              </a>
+          <a href="#payment">Payment</a>
+          <a onClick={() => setdisplay("none")} href="#payment-contact">
                 Payment & Contact
               </a>
-            </div> */}
+            </div>
+        </div> */}
         </div>
       </nav>
       <div className="container overlay">
@@ -186,7 +186,6 @@ function Landing() {
                 style={{ width: "17rem" }}
                 alt=""
               />
-              {/* Photo by <a href="https://unsplash.com/@icons8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Icons8 Team</a> on <a href="https://unsplash.com/s/photos/student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
             </picture>
             <a
               ref={(e) => (home = e)}
@@ -227,7 +226,6 @@ function Landing() {
                 style={{ width: "25rem" }}
                 alt=""
               />
-              {/* Photo by <a href="https://unsplash.com/@icons8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Icons8 Team</a> on <a href="https://unsplash.com/s/photos/student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
             </picture>
           </div>
           <div className="our-courses">
@@ -353,26 +351,33 @@ function Landing() {
             <div>
               <img src={user} alt="" />
               <div className="myCarousel">
-                <h3>Sivaji Ganesh Naidu</h3>
-                <h4>NIT Durgapur</h4>
+                <h3>Rosefulda Swer</h3>
+                <h4>NIT Meghalaya</h4>
                 <p>
-                  The course is very useful. For me, the Resume session was of
-                  great help. I feel the GD sessions conducted by Uthrive are
-                  also very unique. The course was completely stress free so I
-                  enjoyed a lot.
+                  Sir's teaching is very much appreciated as what is taught clearly made us understand. I would say I am very lucky to be a part of this and grateful for what sir has really made an effort to make the session more interesting. Thanks a lot sir!!!!
                 </p>
               </div>
             </div>
             <div>
               <img src={user} alt="" />
               <div className="myCarousel">
-                <h3>Nalamasu rahul</h3>
-                <h4>NIT Durgapur</h4>
+                <h3>Koneti Yashasri</h3>
+                <h4>NIT Arunachal Pradesh</h4>
                 <p>
-                  I was totally confused and not aware about the placement
-                  process of companies so I registered for Uthrive placement
-                  course. The GD sessions are my favourite. I also loved the
-                  mock interview feature in the course.
+                I Joined Uthrive Placement course. The instructor was great and his teaching style was also very good. Overall I learnt a lot in the course.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src={user} alt="" />
+              <div className="myCarousel">
+                <h3>Harsh Raj</h3>
+                <h4>Techno Engineering College, Banipur</h4>
+                <p>
+                  I joined Uthrive placement prep course. The instructor was
+                  really great. This course provides complete guidance for on
+                  campus as well as off campus placements. I learnt a lot in my
+                  two weeks at Uthrive.
                 </p>
               </div>
             </div>
@@ -408,19 +413,6 @@ function Landing() {
                   I am very impressed with the overall course structure at
                   Uthrive. I feel the GD sesions were really great. I am looking
                   forward to the mock interviews.
-                </p>
-              </div>
-            </div>
-            <div>
-              <img src={user} alt="" />
-              <div className="myCarousel">
-                <h3>Harsh Raj</h3>
-                <h4>NIT Durgapur</h4>
-                <p>
-                  I joined Uthrive placement prep course. The instructor was
-                  really great. This course provides complete guidance for on
-                  campus as well as off campus placements. I learnt a lot in my
-                  two weeks at Uthrive.
                 </p>
               </div>
             </div>
