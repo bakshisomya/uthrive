@@ -2,11 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Landing.css";
 import Nobg from "../../assets/image/Nobg.png";
 import Nobgwebp from "../../assets/image/Nobg.webp";
-// import img from "../../assets/image/illus.png";
-import img from "../../assets/image/illus-1.png";
-// import imgwebp from "../../assets/image/girl.webp";
+import img from "../../assets/image/Group 7.png";
+import imgwebp from "../../assets/image/Group7.webp";
+import ourcourses from "../../assets/image/ourcourses.png";
+import ourcourseswebp from "../../assets/image/ourcourses.webp";
 import qr from "../../assets/image/qr-uthrive.jpeg";
-import user from "../../assets/image/user-3-fill (1).svg";
+import user from "../../assets/image/user-3-fill (1).png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import whitebg from "../../assets/image/whitebg.png";
@@ -126,11 +127,11 @@ function Landing() {
       <div className="container mt-5">
         <div className="top text-center text-lg-start">
           <picture>
-            {/* <source srcSet={imgwebp} type="image/webp" /> */}
+            <source srcSet={imgwebp} type="image/webp" />
             <img
               className="bodyimgmob"
               src={img}
-              style={{ width: "20rem" }}
+              style={{ width: "17rem" }}
               alt=""
             />
             {/* Photo by <a href="https://unsplash.com/@icons8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Icons8 Team</a> on <a href="https://unsplash.com/s/photos/student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
@@ -164,11 +165,11 @@ function Landing() {
             </button>
           </a>
           <picture>
-            {/* <source srcSet={imgwebp} type="image/webp" /> */}
+            <source srcSet={imgwebp} type="image/webp" />
             <img
               className="bodyimg"
               src={img}
-              style={{ width: "30rem" }}
+              style={{ width: "25rem" }}
               alt=""
             />
             {/* Photo by <a href="https://unsplash.com/@icons8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Icons8 Team</a> on <a href="https://unsplash.com/s/photos/student?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
@@ -183,6 +184,10 @@ function Landing() {
           >
             <h2>Our Courses</h2>
           </a>
+          <picture>
+              <source srcSet={ourcourseswebp} type="image/webp" />
+              <img src={ourcourses} style={{ width: "16rem" }} alt="" />
+            </picture>
           <div id="courses-cards">
             <div className="course-card">
               <h4>Uthrive Placement Prep Course</h4>
