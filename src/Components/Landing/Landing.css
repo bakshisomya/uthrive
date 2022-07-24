@@ -36,11 +36,7 @@
 }
 .links {
     width: 500px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-
 .nav-mobile {
     display: none;
 }
@@ -200,10 +196,6 @@ footer{
         display: none
     }
 
-    .links {
-        display: none
-    }
-
     .nav-mobile {
         display: initial;
         color: #776DEB;
@@ -321,11 +313,6 @@ footer{
     .bodyimg {
         display: none;
     }
-
-    .links {
-        display: none
-    }
-
     .nav-mobile {
         display: initial;
         color: #776DEB;
