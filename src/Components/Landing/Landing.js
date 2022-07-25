@@ -127,7 +127,7 @@ function Landing() {
                   aria-current="page"
                   href="#colleges"
                 >
-                  Colleges
+                  Colleges Covered
                 </a>
               </li>
               <li className="nav-item">
@@ -343,7 +343,7 @@ function Landing() {
               name="colleges"
               style={{ textDecoration: "none", color: "#F77E87" }}
             >
-              <h2 className="text-center">Colleges We have Covered</h2>
+              <h2 className="text-center">Colleges We have Covered so far</h2>
             </a>
             <picture>
               <source srcSet={college1webp} type="image/webp" />
@@ -367,6 +367,48 @@ function Landing() {
               </a>
               <a href="https://msit.edu.in/" rel="noreferrer" target="_blank" className="college-card">
               6. Meghnad Saha Institute of Technology
+              </a>
+              <a href="http://www.mckvie.edu.in/" rel="noreferrer" target="_blank" className="college-card">
+              7. MCKV Institute of Engineering
+              </a>
+              <a href="https://bcetdgp.ac.in/" rel="noreferrer" target="_blank" className="college-card">
+              8. Bengal College of Engineering & Technology
+              </a>
+              <a href="https://adamasuniversity.ac.in/" rel="noreferrer" target="_blank" className="college-card">
+              9. Adamas University
+              </a>
+              <a href="https://impscet.net/" rel="noreferrer" target="_blank" className="college-card">
+              10. IMPS College of Engineering & Technology
+              </a>
+              <a href="http://camelliait.ac.in/" rel="noreferrer" target="_blank" className="college-card">
+              11. Camellia Institute of Technology
+              </a>
+              <a href="https://www.ssmengg.edu.in/" rel="noreferrer" target="_blank" className="college-card">
+              12. SSM College of Engineering, J&K
+              </a>
+              <a href="https://www.nit.ac.in/" rel="noreferrer" target="_blank" className="college-card">
+              13. Narula Institute of Technology
+              </a>
+              <a href="https://www.abesit.in/" rel="noreferrer" target="_blank" className="college-card">
+              14. ABESIT College of Engineering, U.P
+              </a>
+              <a href="https://futureeducation.in/" rel="noreferrer" target="_blank" className="college-card">
+              15. Future Institute of Engineering and Management
+              </a>
+              <a href="https://www.synergyinstitute.net/" rel="noreferrer" target="_blank" className="college-card">
+              16. Synergy Institute of Engineering &Technology, Odisha
+              </a>
+              <a href="https://niituniversity.in/" rel="noreferrer" target="_blank" className="college-card">
+              17. NIIT University, Rajasthan
+              </a>
+              <a href="https://ciem.ac.in/" rel="noreferrer" target="_blank" className="college-card">
+              18. CIEM, Kolkata
+              </a>
+              <a href="https://tint.edu.in/" rel="noreferrer" target="_blank" className="college-card">
+              19. Techno International, Kolkata
+              </a>
+              <a href="https://smitgp.edu.in/" rel="noreferrer" target="_blank" className="college-card">
+              20. Saroj Mohan Institute of Technology
               </a>
               {/* <div className="course-card">
                 <h4>Uthrive Career Guidance Program</h4>
