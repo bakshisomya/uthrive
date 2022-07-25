@@ -4,6 +4,7 @@ import Nobg from "../../assets/image/Nobg.png";
 import Nobgwebp from "../../assets/image/Nobg.webp";
 import img from "../../assets/image/Group 7.png";
 import imgwebp from "../../assets/image/Group7.webp";
+import college1 from "../../assets/image/college.png";
 import ourcourses from "../../assets/image/ourcourses.png";
 import ourcourseswebp from "../../assets/image/ourcourses.webp";
 import qr from "../../assets/image/qr-uthrive.jpeg";
@@ -34,6 +35,7 @@ function Landing() {
   let home = useRef();
   let about = useRef();
   let courses = useRef();
+  let colleges = useRef();
   let reviews = useRef();
 
   useEffect(() => {
@@ -50,6 +52,11 @@ function Landing() {
     if (document.location.hash === "#courses") {
       setTimeout(() => {
         courses.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 300);
+    }
+    if (document.location.hash === "#colleges") {
+      setTimeout(() => {
+        colleges.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 300);
     }
     if (document.location.hash === "#reviews") {
@@ -78,7 +85,7 @@ function Landing() {
             : "navbar navbar-expand-lg px-lg-5 sticky-top"
         }
       >
-        <div className="container d-flex align-items-center">
+        <div className="container">
           <picture>
             <source srcSet={Nobgwebp} type="image/webp" />
             <img src={Nobg} style={{ width: "7rem" }} alt="" />
@@ -111,6 +118,15 @@ function Landing() {
                   href="#courses"
                 >
                   Our Courses
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href="#colleges"
+                >
+                  Colleges
                 </a>
               </li>
               <li className="nav-item">
@@ -253,7 +269,7 @@ function Landing() {
                 <a
                   type="button"
                   className="btn"
-                  href="https://forms.gle/kPGt3ETC58YDQTe38"
+                  href="https://forms.gle/qRNZwmuEnB6ixF6x5"
                   style={{ textDecoration: "none", color: "#776DEB" }}
                   target="_blank"
                   rel="noreferrer"
@@ -319,6 +335,59 @@ function Landing() {
             </div>
           </div>
         </div>
+        <div className="our-courses">
+            <a
+              ref={(e) => (colleges = e)}
+              href="/"
+              name="colleges"
+              style={{ textDecoration: "none", color: "#F77E87" }}
+            >
+              <h2 className="text-center">Colleges We have Covered</h2>
+            </a>
+            <picture>
+              {/* <source srcSet={ourcourseswebp} type="image/webp" /> */}
+              <img id="colgimg" src={college1} alt="" />
+            </picture>
+            <div id="courses-cards">
+              <a href="https://nitdgp.ac.in/" rel="noreferrer" target="_blank" className="college-card">
+              1. NIT Durgapur
+              </a>
+              <a href="https://www.nitm.ac.in/" rel="noreferrer" target="_blank" className="college-card">
+              2. NIT Meghalaya
+              </a>
+              <a href="https://www.nitap.ac.in/" rel="noreferrer" target="_blank" className="college-card">
+              3. NIT Arunachal Pradesh
+              </a>
+              <a href="https://www.iiitagartala.ac.in/" rel="noreferrer" target="_blank" className="college-card">
+              4. IIIT Agartala
+              </a>
+              <a href="https://www.heritageit.edu/" rel="noreferrer" target="_blank" className="college-card">
+              5. Heritage Institute of Technology
+              </a>
+              <a href="https://msit.edu.in/" rel="noreferrer" target="_blank" className="college-card">
+              6. Meghnad Saha Institute of Technology
+              </a>
+              {/* <div className="course-card">
+                <h4>Uthrive Career Guidance Program</h4>
+                <p style={{ textAlign: "justify", textJustify: "inter-word" }}>
+                  We provide free Career guidance to the students who are facing
+                  difficulty in decision making. It may be related to choosing
+                  the right college, course or anything else. We are here to
+                  help you.
+                </p>
+                <a
+                  type="button"
+                  className="btn"
+                  href="https://forms.gle/chf8Ec2tZYTJ2tJY8"
+                  style={{ textDecoration: "none", color: "#776DEB" }}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Register Now
+                </a>
+              </div> */}
+            </div>
+          </div>
         <div className="our-courses">
           <a
             ref={(e) => (reviews = e)}
