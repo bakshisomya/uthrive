@@ -5,6 +5,7 @@ import Nobgwebp from "../../assets/image/Nobg.webp";
 import img from "../../assets/image/Group 7.png";
 import imgwebp from "../../assets/image/Group7.webp";
 import college1 from "../../assets/image/college.png";
+import college1webp from "../../assets/image/college.webp";
 import ourcourses from "../../assets/image/ourcourses.png";
 import ourcourseswebp from "../../assets/image/ourcourses.webp";
 import qr from "../../assets/image/qr-uthrive.jpeg";
@@ -345,7 +346,7 @@ function Landing() {
               <h2 className="text-center">Colleges We have Covered</h2>
             </a>
             <picture>
-              {/* <source srcSet={ourcourseswebp} type="image/webp" /> */}
+              <source srcSet={college1webp} type="image/webp" />
               <img id="colgimg" src={college1} alt="" />
             </picture>
             <div id="courses-cards">
