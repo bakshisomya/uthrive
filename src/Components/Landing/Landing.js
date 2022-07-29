@@ -597,6 +597,13 @@ function Landing() {
             ) : (
               ""
             )}
+            <a type="button"
+                className="btn-hover color-1 mt-3"
+                href="https://forms.gle/PrUUcEB9FCvBhvZ6A"
+                target="_blank"
+                rel="noreferrer"
+                style={{textDecoration:'none',textAlign:'center'}}
+                >Upload payment snapshot here</a>
           </div>
         </a>
       </div>
