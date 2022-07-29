@@ -562,7 +562,7 @@ function Landing() {
           ref={(e) => (pc = e)}
         >
           <div className="our-courses">
-            <h2 style={{ textAlign: "center" }}>Scan the QR for payment</h2>
+            <h2 style={{ textAlign: "center" }}>Scan to Pay</h2>
             <img src={qr} style={{ width: "10rem" }} alt="qr code" />
             <h5 style={{ textAlign: "center", color: "#323232" }}>OR</h5>
             <h5 style={{ textAlign: "center", color: "#323232" }}>
@@ -602,8 +602,8 @@ function Landing() {
                 href="https://forms.gle/PrUUcEB9FCvBhvZ6A"
                 target="_blank"
                 rel="noreferrer"
-                style={{textDecoration:'none',textAlign:'center'}}
-                >Upload payment snapshot here</a>
+                style={{textDecoration:'none',textAlign:'center',padding: ".6rem 1rem"}}
+                >Upload Screenshot</a>
           </div>
         </a>
       </div>
