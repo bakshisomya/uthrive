@@ -1,0 +1,316 @@
+/* base is the main bg of the whole website */
+#base {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 75px;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 15px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #323232;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover {
+    color: #CE76A6
+}
+
+/* create one line beneath hover effect */
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #CE76A6;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+#mobile {
+    display: none;
+}
+
+#mobile i {
+    align-items: center;
+}
+
+#landing-base {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    padding: 80px 0px;
+}
+
+#left {
+    width: 50%;
+    height: 100%;
+}
+
+#right {
+    width: 50%;
+    height: 100%;
+}
+
+#img-for-tabsnphones {
+    display: none;
+}
+
+#landing-base #left h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #7F6CE6;
+    margin-bottom: 2rem;
+}
+
+#landing-base #left p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #323232;
+    margin-bottom: 2rem;
+}
+
+#landing-base #left button {
+    padding: 10px 25px;
+    background-color: #CE76A6;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#landing-base #right #pic {
+    position: absolute;
+    top: 20%;
+    right: -8%;
+    width: 600px;
+}
+
+/* design elements positioning  */
+#design1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15rem;
+}
+
+/* for mobile screens */
+@media only screen and (max-width:768px) {
+    #base {
+        padding: 50px 45px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        padding: 50px 45px;
+        background-color: #EEDCED;
+        z-index: 99999;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 6.2rem;
+        right: -30rem;
+        width: 300px;
+        height: 100vh;
+        background-color: #CE76A6;
+        box-shadow: 0 40px 60px #ce76a661;
+        padding: 40px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #navbar.active {
+        right: 0rem;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #navbar li a {
+        color: #fff;
+    }
+
+    #navbar li a:hover {
+        color: #fff
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #mobile i {
+        font-size: 24px;
+        cursor: pointer;
+        color: #CE76A6;
+    }
+
+    #landing-base {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 7rem;
+    }
+
+    #left {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #img-for-tabsnphones {
+        display: flex;
+        margin-bottom: 4rem;
+    }
+
+    #img-for-tabsnphones #pic-for-tabsnphones {
+        max-width: 20rem;
+    }
+
+    #landing-base #right #pic {
+        position: initial;
+        width: 300px;
+        margin-top: 8rem;
+    }
+
+    #design1 {
+        position: absolute;
+        top: 6rem;
+        left: -1rem;
+        width: 10rem;
+    }
+}
+
+/* for tablets */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    #base {
+        padding: 50px 45px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        padding: 50px 45px;
+        background-color: #EEDCED;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 6.2rem;
+        right: -30rem;
+        width: 300px;
+        height: 100vh;
+        background-color: #CE76A6;
+        box-shadow: 0 40px 60px #ce76a661;
+        padding: 40px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #navbar.active {
+        right: 0rem;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #navbar li a {
+        color: #fff;
+    }
+
+    #navbar li a:hover {
+        color: #fff
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #mobile i {
+        font-size: 24px;
+        cursor: pointer;
+        color: #CE76A6;
+    }
+
+    #landing-base {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 7rem;
+    }
+
+    #left {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #img-for-tabsnphones {
+        display: flex;
+        margin-bottom: 4rem;
+    }
+
+    #img-for-tabsnphones #pic-for-tabsnphones {
+        max-width: 25rem;
+    }
+
+    #landing-base #right #pic {
+        position: initial;
+        width: 300px;
+        margin-top: 8rem;
+    }
+
+    #design1 {
+        display: none;
+    }
+}

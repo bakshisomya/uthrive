@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Landing from './Components/Landing/Landing'
 
 function App() {
+  //this loader shows when only html is loaded and react is not rendered
+  //for this you need to put the image in index.html
+  const [loading, setloading] = useState(true);
+  const spinner = document.getElementById("loading");
+  if (spinner) {
+    setTimeout(() => {
+      spinner.style.display = "none";
+      setloading(false);
+    }, 2000);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    !loading && (
+      <Landing/>
+    )
+  )
 }
 
-export default App;
+export default App
