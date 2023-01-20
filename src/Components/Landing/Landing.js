@@ -4,6 +4,7 @@ import logo from "../../assets/images/Nobg.png";
 import logowebp from "../../assets/images/Nobg.webp";
 import landingimg from "../../assets/images/landing.png";
 import design1 from "../../assets/images/Group 11.png";
+import imgforphone from "../../assets/images/imgforphone.png"; 
 
 function Landing() {
   const [clicked, setclicked] = useState(false);
@@ -48,7 +49,7 @@ function Landing() {
       <div id="landing-base">
         <img id="design1" src={design1} alt="" />
         <div id="img-for-tabsnphones">
-          <img id="pic-for-tabsnphones" src={landingimg} alt="" />
+          <img id="pic-for-tabsnphones" src={imgforphone} alt="" />
         </div>
         <div id="left">
           <h1>
