@@ -5,6 +5,7 @@ import logowebp from "../../assets/images/Nobg.webp";
 import landingimg from "../../assets/images/landing.png";
 import design1 from "../../assets/images/Group 11.png";
 import imgforphone from "../../assets/images/imgforphone.png"; 
+import Imagecarousel from "../Imagecarousel/Imagecarousel";
 
 function Landing() {
   const [clicked, setclicked] = useState(false);
@@ -68,6 +69,11 @@ function Landing() {
           <img id="pic" src={landingimg} alt="" />
           {/* </picture> */}
         </div>
+      </div>
+      {/* our courses page */}
+      <div id="courses">
+        <h1>Our Courses</h1>
+        <Imagecarousel/>
       </div>
     </div>
   );

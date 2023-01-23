@@ -100,6 +100,7 @@ nav {
 #landing-base #left button {
     padding: 10px 25px;
     background-color: #CE76A6;
+    box-shadow: 0px 6px 12px #ce76a65c;
     color: #fff;
     border: none;
     border-radius: .5rem;
@@ -120,6 +121,21 @@ nav {
     top: 0;
     left: 0;
     width: 15rem;
+}
+
+/* section of courses */
+#courses {
+    width: 100%;
+    height: 100vh;
+    /*change this later*/
+    padding: 8rem 0px;
+}
+
+#courses h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #7F6CE6;
+    margin-bottom: 2rem;
 }
 
 /* for mobile screens */
@@ -198,11 +214,12 @@ nav {
         display: none;
     }
 
-    #landing-base #left h1{
+    #landing-base #left h1 {
         font-size: 40px;
     }
-    #landing-base #left p{
-        font-size:20px;
+
+    #landing-base #left p {
+        font-size: 20px;
     }
 
     #img-for-tabsnphones {
@@ -225,6 +242,14 @@ nav {
         top: 4rem;
         left: -1rem;
         width: 10rem;
+    }
+
+    #courses h1 {
+        font-size: 30px;
+        font-weight: 500;
+        color: #7F6CE6;
+        margin-bottom: 2rem;
+        text-align: center;
     }
 }
 
@@ -324,5 +349,12 @@ nav {
         top: 4rem;
         left: -1rem;
         width: 10rem;
+    }
+    #courses h1 {
+        font-size: 30px;
+        font-weight: 500;
+        color: #7F6CE6;
+        margin-bottom: 2rem;
+        text-align: center;
     }
 }
