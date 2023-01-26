@@ -12,7 +12,7 @@ import english from "../../assets/images/pexels-matheus-bertelli-3321793.jpg"
 function CourseCard() {
   var settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -48,7 +48,7 @@ function CourseCard() {
         <div id="content-div">
           <h4>Placement Prep Course</h4>
           <p>
-          This course consists of Tech and HR interview classes, Mock interview sessions, Resume making session, 
+          This course consists of Technical and HR interview classes, Mock interview sessions, Resume making session, Soft skills sessions, GD session, company specific sessions and much more. Join us today.
           </p>
           <button>Register Now</button>
         </div>
@@ -60,7 +60,7 @@ function CourseCard() {
         <div id="content-div">
           <h4>Free Webinars</h4>
           <p>
-          This course consists of Tech and HR interview classes, Mock interview sessions, Resume making session, 
+          We organise regular free webinars on Placement process, Company interviews and new skills to make you industry ready. Click here to register for a free webinar.
           </p>
           <button>Register Now</button>
         </div>
@@ -72,7 +72,7 @@ function CourseCard() {
         <div id="content-div">
           <h4>English Speaking Course</h4>
           <p>
-          This course consists of Tech and HR interview classes, Mock interview sessions, Resume making session, 
+          We have launched a special Conversational English speaking course for students and professionals of all age groups. Join our course and take a step towards being confident.
           </p>
           <button>Register Now</button>
         </div>
@@ -84,9 +84,7 @@ function CourseCard() {
         <div id="content-div">
           <h4>Career Counselling</h4>
           <p>
-            We provide free Career guidance to the students who are facing
-            difficulty in decision making. It may be related to choosing the
-            right college, course or anything else. We are here to help you.
+          We provide free Career guidance to the students who are facing difficulty in decision making. It may be related to choosing the right college, course or anything else. We are here to help you.
           </p>
           <button>Register Now</button>
         </div>
