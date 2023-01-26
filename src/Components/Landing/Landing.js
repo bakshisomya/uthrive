@@ -6,7 +6,7 @@ import landingimg from "../../assets/images/landing.png";
 import design1 from "../../assets/images/Group 11.png";
 import imgforphone from "../../assets/images/imgforphone.png";
 import CourseCard from "../CourseCard/CourseCard";
-import CollegeCard from "../CollegeCard/CollegeCard";
+import College from "../College/College";
 
 function Landing() {
   const [clicked, setclicked] = useState(false);
@@ -85,9 +85,7 @@ placement prep courses in more than 20 colleges</p>
 <button>Know More <i className="ri-arrow-down-line"></i></button>
       </div>
       </div>
-      <div id="collegecard">
-      <CollegeCard/>
-      </div>
+      <College/>
       </div>
     </div>
   );
