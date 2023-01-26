@@ -126,16 +126,76 @@ nav {
 /* section of courses */
 #courses {
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     /*change this later*/
     padding: 8rem 0px;
 }
-
 #courses h1 {
     font-size: 50px;
     font-weight: 500;
     color: #7F6CE6;
     margin-bottom: 2rem;
+}
+
+/*section of colleges*/
+#colleges {
+    position: absolute;
+    top: 230%;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    /*change this later*/
+    background-color: #323232;
+}
+
+#colleges #underlay {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    background-image: url(../../assets/images/pexels-idriss-meliani-2982449.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#colleges #underlay #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.43);
+    color: #fff;
+    text-align: center;
+}
+
+#colleges #underlay #overlay h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#colleges #underlay #overlay p {
+    font-size: 20px;
+    margin: 1rem 0rem;
+}
+
+#colleges #underlay #overlay button {
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: #CE76A6;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#colleges #underlay #overlay button i {
+    font-size: 18px;
 }
 
 /* for mobile screens */
@@ -251,6 +311,18 @@ nav {
         margin-bottom: 2rem;
         text-align: center;
     }
+
+    #colleges {
+        position: absolute;
+        top: 250%;
+        left: 0;
+    }
+    #colleges #underlay #overlay h1{
+        font-size: 40px;
+    }
+    #colleges #underlay #overlay p{
+        font-size: 18px;
+    }
 }
 
 /* for tablets */
@@ -350,6 +422,7 @@ nav {
         left: -1rem;
         width: 10rem;
     }
+
     #courses h1 {
         font-size: 30px;
         font-weight: 500;

@@ -4,8 +4,8 @@ import logo from "../../assets/images/Nobg.png";
 import logowebp from "../../assets/images/Nobg.webp";
 import landingimg from "../../assets/images/landing.png";
 import design1 from "../../assets/images/Group 11.png";
-import imgforphone from "../../assets/images/imgforphone.png"; 
-import Imagecarousel from "../Imagecarousel/Imagecarousel";
+import imgforphone from "../../assets/images/imgforphone.png";
+import CourseCard from "../CourseCard/CourseCard";
 
 function Landing() {
   const [clicked, setclicked] = useState(false);
@@ -73,7 +73,17 @@ function Landing() {
       {/* our courses page */}
       <div id="courses">
         <h1>Our Courses</h1>
-        <Imagecarousel/>
+        <CourseCard/>
+      </div>
+      <div id="colleges">
+      <div id="underlay">
+      <div id="overlay">
+        <h1>Colleges we have<br/>covered so far</h1>
+        <p>We have organised serveral webinars and have provided multiple<br/>
+placement prep courses in more than 20 colleges</p>
+<button>Know More <i className="ri-arrow-down-line"></i></button>
+      </div>
+      </div>
       </div>
     </div>
   );
