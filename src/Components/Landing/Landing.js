@@ -6,7 +6,6 @@ import landingimg from "../../assets/images/landing.png";
 import design1 from "../../assets/images/Group 11.png";
 import imgforphone from "../../assets/images/imgforphone.png";
 import CourseCard from "../CourseCard/CourseCard";
-import design2 from "../../assets/images/Design2.png";
 import CollegeCard from "../CollegeCard/CollegeCard";
 
 function Landing() {
@@ -74,7 +73,6 @@ function Landing() {
       </div>
       {/* our courses page */}
       <div id="courses">
-      <img id="design2" src={design2} alt="" />
         <h1>Our Courses</h1>
         <CourseCard/>
       </div>
