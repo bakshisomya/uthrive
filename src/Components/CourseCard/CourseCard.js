@@ -8,27 +8,6 @@ import placement from "../../assets/images/pexels-mikhail-nilov-8297474.jpg"
 import webinar from "../../assets/images/pexels-christina-morillo-1181406.jpg"
 import english from "../../assets/images/pexels-matheus-bertelli-3321793.jpg"
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
-  );
-}
 
 function CourseCard() {
   var settings = {
