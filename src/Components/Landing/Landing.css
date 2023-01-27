@@ -248,6 +248,77 @@ nav {
     text-align: center;
 }
 
+footer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #7F6CE6; */
+    padding: 40px 75px;
+}
+
+footer .cols {
+    width: 33.3%;
+    height: 100%;
+    /* background-color: rgb(25, 25, 25); */
+    margin-right: 3rem
+}
+
+footer .cols:nth-last-child(1) {
+    margin-right: 0
+}
+footer #futerlogo{
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+footer #quote{
+    font-size:16px;
+    font-style: italic;
+    color: #3232327d;
+    margin-bottom: 6rem;
+}
+
+/* to style all footer headings */
+footer .custom-footer-styling{
+    font-size:18px;
+    text-transform: uppercase;
+    color: #7F6CE6
+}
+footer .logos{
+    margin-top:.7rem;
+    font-size: 20px;
+}
+footer .logos a{
+    text-decoration: none;
+    color: #323232;
+    margin-right:1rem;
+}
+footer #follow-div{
+    width: 33%;
+    position: relative;
+}
+footer #follow-bird{
+    position:absolute;
+    bottom:50%;
+    right:0
+}
+footer #quicklinks-div{
+    width: 33%;
+    position: relative;
+}
+footer #quicklinks-bird{
+    position:absolute;
+    bottom:50%;
+    right:-6%
+}
+footer #footerlinks{
+    display:flex;
+    flex-direction:column;
+    justify-content:center
+    
+}
+
 /* for mobile screens */
 @media only screen and (max-width:768px) {
     nav {
@@ -388,9 +459,11 @@ nav {
     #colleges #underlay #overlay p {
         font-size: 18px;
     }
-    #testimonials #design4{
+
+    #testimonials #design4 {
         display: none;
     }
+
     #testimonials #review-card {
         width: 20rem;
         height: 40rem;
@@ -403,6 +476,27 @@ nav {
         border: 2px solid rgba(255, 255, 255, 0.799);
         text-align: center;
     }
+
+    footer {
+        height: 100%;
+        display: block;
+        padding: 20px 45px;
+    }
+
+    footer .cols {
+        width: 100%;
+        height: 400px;
+    }
+    footer #follow-div{
+        width: 53%;
+        position: relative;
+    }
+    footer #follow-bird{
+        position:absolute;
+        bottom:50%;
+        right:0
+    }
+
 }
 
 /* for tablets */
@@ -540,12 +634,14 @@ nav {
     #testimonials {
         margin-top: 0rem;
     }
-    #testimonials #design4{
+
+    #testimonials #design4 {
         display: none;
     }
+
     #testimonials #review-card {
         width: 20rem;
-        height: 30rem;
+        height: 40rem;
         /* From https://css.glass */
         background: rgba(255, 255, 255, 0.53);
         border-radius: 16px;
