@@ -35,6 +35,7 @@ function CourseCard() {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
+          dots:false,
         },
       },
     ],

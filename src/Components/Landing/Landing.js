@@ -7,6 +7,8 @@ import design1 from "../../assets/images/Group 11.png";
 import imgforphone from "../../assets/images/imgforphone.png";
 import CourseCard from "../CourseCard/CourseCard";
 import College from "../College/College";
+import design2 from "../../assets/images/Design2.png"
+import design3 from "../../assets/images/Group 40.png"
 
 function Landing() {
   const [clicked, setclicked] = useState(false);
@@ -73,6 +75,8 @@ function Landing() {
       </div>
       {/* our courses page */}
       <div id="courses">
+      <img src={design2} id="design2" alt="" />
+      <img src={design3} id="design3" alt="" />
         <h1>Our Courses</h1>
         <CourseCard/>
       </div>
@@ -86,6 +90,9 @@ placement prep courses in more than 20 colleges</p>
       </div>
       </div>
       <College/>
+      </div>
+      <div id="testimonials">
+        <img src={design2} id="design4" alt="" />
       </div>
     </div>
   );

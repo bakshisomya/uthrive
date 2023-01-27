@@ -64,7 +64,6 @@ nav {
 
 #landing-base {
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     padding: 80px 75px;
 }
@@ -125,8 +124,8 @@ nav {
 
 /* section of courses */
 #courses {
+    position: relative;
     width: 100%;
-    /*change this later*/
     padding: 8rem 0px;
     text-align: center;
 }
@@ -136,18 +135,30 @@ nav {
     color: #7F6CE6;
     margin-bottom: 2rem;
 }
-
+#courses #design2{
+    position: absolute;
+    top:15%;
+    left: 0;
+    width: 30rem;
+}
+#courses #design3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20rem;
+}
 /*section of colleges*/
 #colleges{
     width: 100%;
-    height: 200vh;
     text-align: center;
+    padding: 0rem 0rem 8rem 0rem;
+
     /*change this later*/
 }
 #colleges #underlay {
     position: relative;
     width: 100%;
-    height: 40%;
+    height: 30rem;
     background-image: url(../../assets/images/pexels-idriss-meliani-2982449.jpg);
     background-position: center;
     background-size: cover;
@@ -193,6 +204,18 @@ nav {
 
 #colleges #underlay #overlay button i {
     font-size: 18px;
+}
+
+#testimonials{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #EEDCED;
+    padding: 8rem 0rem;
+}
+#testimonials #design4{
+    top:0;
+    left: 0;
 }
 
 /* for mobile screens */
@@ -272,10 +295,12 @@ nav {
 
     #landing-base #left h1 {
         font-size: 40px;
+        padding: 0rem 2rem;
     }
 
     #landing-base #left p {
         font-size: 20px;
+        padding: 0rem 2rem;
     }
 
     #img-for-tabsnphones {
@@ -308,6 +333,18 @@ nav {
         color: #7F6CE6;
         margin-bottom: 2rem;
         text-align: center;
+    }
+    #courses #design2{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 20rem;
+    }
+    #courses #design3{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 10rem;
     }
     #colleges #underlay #overlay h1{
         font-size: 40px;
@@ -424,10 +461,25 @@ nav {
         margin-bottom: 2rem;
         text-align: center;
     }
+    #courses #design2{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 20rem;
+    }
+    #courses #design3{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 10rem;
+    }
     #colleges #underlay #overlay h1{
         font-size: 40px;
     }
     #colleges #underlay #overlay p{
         font-size: 18px;
+    }
+    #testimonials{
+        margin-top: 0rem;
     }
 }
