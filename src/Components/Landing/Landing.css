@@ -391,7 +391,17 @@ nav {
     #testimonials #design4{
         display: none;
     }
-    #testimonials #review-card{
+    #testimonials #review-card {
+        width: 20rem;
+        height: 40rem;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.53);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(1.5px);
+        -webkit-backdrop-filter: blur(1.5px);
+        border: 2px solid rgba(255, 255, 255, 0.799);
+        text-align: center;
     }
 }
 
@@ -533,7 +543,16 @@ nav {
     #testimonials #design4{
         display: none;
     }
-    #testimonials #review-card{
-
+    #testimonials #review-card {
+        width: 20rem;
+        height: 30rem;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.53);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(1.5px);
+        -webkit-backdrop-filter: blur(1.5px);
+        border: 2px solid rgba(255, 255, 255, 0.799);
+        text-align: center;
     }
 }
