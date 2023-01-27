@@ -9,6 +9,7 @@ import CourseCard from "../CourseCard/CourseCard";
 import College from "../College/College";
 import design2 from "../../assets/images/Design2.png"
 import design3 from "../../assets/images/Group 40.png"
+import ReviewCard from "../ReviewCard/ReviewCard";
 
 function Landing() {
   const [clicked, setclicked] = useState(false);
@@ -92,7 +93,12 @@ placement prep courses in more than 20 colleges</p>
       <College/>
       </div>
       <div id="testimonials">
+      <h1>What Our Students Say</h1>
         <img src={design2} id="design4" alt="" />
+        <div id="review-card">
+          <ReviewCard/>
+        </div>
+
       </div>
     </div>
   );

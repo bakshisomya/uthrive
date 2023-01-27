@@ -1,0 +1,50 @@
+#review-base {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 30rem;
+    max-width: 30rem;
+    /* react me min width hi set krte h agar nhi chahte ki card ki size khudse squeeze hojaye  */
+    height: 25rem;
+}
+#review-base #img-div {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    /* background-color: rgb(255, 98, 98); */
+    padding: 5rem;
+}
+#review-base #img-div img{
+    width: 5rem;
+    border-radius: 55px 55px 0px 0px;
+}
+#review-base #content-div{
+    width: 100%;
+    height: 13rem;
+    padding: 0px 30px;
+    text-align: center;
+    color: #323232;
+    display: flex;
+    flex-direction: column;
+}
+
+#review-base #content-div h5 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#review-base #content-div p {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 4rem;
+}
+
+#review-base #content-div h6{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: .6;
+}   
