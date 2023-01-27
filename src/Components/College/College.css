@@ -35,4 +35,19 @@
 #colg-base #content-div h4 {
     font-size: 18px;
     font-weight: 500;
+    color:#7F6CE6;
+}
+
+.slick-prev {
+    left: 3% !important;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 3% !important;
+    z-index: 1;
+  }
+
+  .slick-prev:before,
+.slick-next:before {
+  color: #7F6CE6;
 }

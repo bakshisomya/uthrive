@@ -9,7 +9,9 @@ import webinar from "../../assets/images/pexels-christina-morillo-1181406.jpg"
 import english from "../../assets/images/pexels-matheus-bertelli-3321793.jpg"
 
 
+
 function CourseCard() {
+  
   var settings = {
     dots: true,
     infinite: false,
@@ -17,8 +19,6 @@ function CourseCard() {
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
