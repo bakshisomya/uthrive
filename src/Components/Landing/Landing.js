@@ -141,7 +141,16 @@ function Landing() {
             <a href="#home">About</a>
           </div>
         </div>
-        <div className="cols"></div>
+        <div className="cols">
+          <div id="contact-us">
+          <img src={birdie} id="contact-bird" alt="" />
+          <p className="custom-footer-styling" id="contact">Contact Us</p>
+          </div>
+          <div id="contact-links">
+          <a href="#home"><i className="ri-phone-fill"></i>&nbsp;+91 9847292829</a>
+            <a href="#home"><i className="ri-mail-fill"></i>&nbsp;publicrelations@uthrive.co.in</a>
+          </div>
+        </div>
       </footer>
     </div>
   );
