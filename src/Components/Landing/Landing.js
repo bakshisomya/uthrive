@@ -134,6 +134,7 @@ function Landing() {
           <ReviewCard />
         </div>
       </div>
+      {/* about section  */}
       <div id="about">
       <div id="underlay">
           <div id="overlay">
@@ -205,6 +206,8 @@ function Landing() {
             <a href="#courses">Our Courses</a>
             <a href="#testimonials">Reviews</a>
             <a href="#about">About</a>
+            <a href="https://forms.gle/apErTX3XAe9zEuAt7" target="_blank"
+              rel="noreferrer">Payment</a>
           </div>
         </div>
         <div className="cols">
