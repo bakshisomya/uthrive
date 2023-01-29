@@ -216,7 +216,7 @@ nav {
 #about {
     width: 100%;
     text-align: center;
-    /* padding: 0rem 0rem 8rem 0rem; */
+    /* padding: 8rem 0rem 8rem 0rem; */
 
     /*change this later*/
 }
@@ -241,7 +241,7 @@ nav {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.662);
+    background-color: rgba(0, 0, 0, 0.43);
     color: #fff;
     text-align: center;
 }
@@ -543,7 +543,31 @@ footer #contact-links a:hover{
     #colleges #underlay #overlay p {
         font-size: 18px;
     }
+    #about {
+        width: 100%;
+        height: 800px;
+        text-align: center;
+        background-color: rgb(255, 140, 140);
+        /* padding: 8rem 0rem 8rem 0rem; */
+    
+        /*change this later*/
+    }
+    #about #underlay {
+        position: relative;
+        width: 100%;
+        height: 50rem;
+        background-image: url(../../assets/images/about.jpg);
+        background-position: center;
+        background-size: cover;
+        /* margin-bottom: 2rem; */
+    }
+    #about #underlay #overlay h1 {
+        font-size: 40px;
+    }
 
+    #about #underlay #overlay p {
+        font-size: 18px;
+    }
     #testimonials #design4 {
         display: none;
     }
@@ -725,7 +749,31 @@ footer #contact-links a:hover{
     #colleges #underlay #overlay p {
         font-size: 18px;
     }
+    #about {
+        width: 100%;
+        height: 800px;
+        text-align: center;
+        background-color: rgb(255, 140, 140);
+        /* padding: 8rem 0rem 8rem 0rem; */
+    
+        /*change this later*/
+    }
+    #about #underlay {
+        position: relative;
+        width: 100%;
+        height: 50rem;
+        background-image: url(../../assets/images/about.jpg);
+        background-position: center;
+        background-size: cover;
+        /* margin-bottom: 2rem; */
+    }
+    #about #underlay #overlay h1 {
+        font-size: 40px;
+    }
 
+    #about #underlay #overlay p {
+        font-size: 18px;
+    }
     #testimonials {
         margin-top: 0rem;
     }
