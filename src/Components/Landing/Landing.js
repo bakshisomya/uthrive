@@ -29,7 +29,7 @@ function Landing() {
         <div>
           <ul id="navbar" className={clicked ? "#navbar active" : "navbar"}>
             <li>
-              <a href="#home">Home</a>
+              <a href="#landing-base">Home</a>
             </li>
             <li>
               <a href="#courses">Our Courses</a>
@@ -41,7 +41,14 @@ function Landing() {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#payment-contact">Payment and Contact</a>
+              <a href="#testimonials">Reviews</a>
+            </li>
+            <li>
+              <a href="https://forms.gle/apErTX3XAe9zEuAt7" target="_blank"
+              rel="noreferrer">Payment</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -67,7 +74,14 @@ function Landing() {
             Join us at Uthrive and polish your skills with the <br />
             first class instructors.
           </p>
-          <button>Get Started</button>
+          <button>
+            <a
+              style={{ textDecoration: "none", color: "white" }}
+              href="#courses"
+            >
+              Get Started
+            </a>
+          </button>
         </div>
         <div id="right">
           {/* <picture> */}
@@ -83,6 +97,7 @@ function Landing() {
         <h1>Our Courses</h1>
         <CourseCard />
       </div>
+      {/* colleges section */}
       <div id="colleges">
         <div id="underlay">
           <div id="overlay">
@@ -97,12 +112,21 @@ function Landing() {
               placement prep courses in more than 20 colleges
             </p>
             <button>
-              Know More <i className="ri-arrow-down-line"></i>
+              <a
+                style={{ textDecoration: "none", color: "white" }}
+                href="#collegecards"
+              >
+                {" "}
+                Know More <i className="ri-arrow-down-line"></i>{" "}
+              </a>
             </button>
           </div>
         </div>
-        <College />
+        <div id="collegecards">
+          <College />
+        </div>
       </div>
+      {/* reviews section  */}
       <div id="testimonials">
         <h1>What Our Students Say</h1>
         <img src={design2} id="design4" alt="" />
@@ -110,7 +134,28 @@ function Landing() {
           <ReviewCard />
         </div>
       </div>
-      <footer>
+      <div id="about">
+      <div id="underlay">
+          <div id="overlay">
+            <h1>
+              About Us
+            </h1>
+            <p>
+            Uthrive is one of its kind edtech platform founded on 10th January
+            2021. In the last 18 months we have guided and helped more than 1500
+            students excel in their career and get desired job roles in various
+            companies. Our main goal is to provide students with access to
+            highly affordable and Quality courses, and therefore, since our
+            inception we have never launched any course which would cost more
+            than Rs. 300. Our courses include Placement Preparation course, and
+            English speaking course. Apart from these, we also organise regular
+            free webinars for students of all age groups. Join us today and stay
+            ahead of others in the race for Campus Placements.
+            </p>
+            </div>
+            </div>
+      </div>
+      <footer id="contact">
         <div className="cols">
           <img id="futerlogo" src={footerlogo} alt="" />
           <p id="quote">
@@ -119,36 +164,64 @@ function Landing() {
             day adds up to great results
           </p>
           <div id="follow-div">
-          <img src={birdie} id="follow-bird" alt="" />
-          <p className="custom-footer-styling" id="follow">Follow Us</p>
+            <img src={birdie} id="follow-bird" alt="" />
+            <p className="custom-footer-styling" id="follow">
+              Follow Us
+            </p>
           </div>
           <div className="logos">
-            <a href="#home"><i className="ri-facebook-circle-fill"></i></a>
-            <a href="#home"><i className="ri-instagram-fill"></i></a>
-            <a href="#home"><i className="ri-linkedin-box-fill"></i></a>
-            <a href="#home"><i className="ri-whatsapp-fill"></i></a>
+            <a
+              href="https://instagram.com/uthrivecommunity?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="ri-instagram-fill"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/uthriveteam/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="ri-linkedin-box-fill"></i>
+            </a>
+            <a
+              href="https://wa.me/message/BH27LL7THYEDM1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="ri-whatsapp-fill"></i>
+            </a>
           </div>
         </div>
         <div className="cols">
-        <div id="quicklinks-div">
-          <img src={birdie} id="quicklinks-bird" alt="" />
-          <p className="custom-footer-styling" id="quicklinks">Quick Links</p>
+          <div id="quicklinks-div">
+            <img src={birdie} id="quicklinks-bird" alt="" />
+            <p className="custom-footer-styling" id="quicklinks">
+              Quick Links
+            </p>
           </div>
           <div id="footer-links">
-          <a href="#home">Home</a>
-            <a href="#home">Our Courses</a>
-            <a href="#home">Reviews</a>
-            <a href="#home">About</a>
+            <a href="#landing-base">Home</a>
+            <a href="#courses">Our Courses</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#about">About</a>
           </div>
         </div>
         <div className="cols">
           <div id="contact-us">
-          <img src={birdie} id="contact-bird" alt="" />
-          <p className="custom-footer-styling" id="contact">Contact Us</p>
+            <img src={birdie} id="contact-bird" alt="" />
+            <p className="custom-footer-styling" id="contact">
+              Contact Us
+            </p>
           </div>
           <div id="contact-links">
-          <a href="#home"><i className="ri-phone-fill"></i>&nbsp;+91 9847292829</a>
-            <a href="#home"><i className="ri-mail-fill"></i>&nbsp;publicrelations@uthrive.co.in</a>
+            <a href="tel:+91-9031672504">
+              <i className="ri-phone-fill"></i>&nbsp;+91 9031672504
+            </a>
+            <a href="mailto:publicrelations@uthrive.co.in">
+              <i className="ri-mail-fill"></i>
+              &nbsp;publicrelations@uthrive.co.in
+            </a>
           </div>
         </div>
       </footer>

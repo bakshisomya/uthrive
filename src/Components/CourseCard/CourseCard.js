@@ -51,7 +51,9 @@ function CourseCard() {
           <p>
           This course consists of Technical and HR interview classes, Mock interview sessions, Resume making session, Soft skills sessions, GD session, company specific sessions and much more. Join us today.
           </p>
-          <button>Register Now</button>
+          <button><a href="https://forms.gle/qRNZwmuEnB6ixF6x5" style={{ textDecoration: "none", color: "#ffffff" }}
+                  target="_blank"
+                  rel="noreferrer">Register Now</a></button>
         </div>
       </div>
       <div id="card-base">
@@ -63,7 +65,10 @@ function CourseCard() {
           <p>
           We organise regular free webinars on Placement process, Company interviews and new skills to make you industry ready. Click here to register for a free webinar.
           </p>
-          <button>Register Now</button>
+          <button><a href="https://forms.gle/XEvsD3HcZfLov5Rt8"
+                  style={{ textDecoration: "none", color: "#ffffff" }}
+                  target="_blank"
+                  rel="noreferrer">Register Now</a></button>
         </div>
       </div>
       <div id="card-base">
@@ -75,7 +80,10 @@ function CourseCard() {
           <p>
           We have launched a special Conversational English speaking course for students and professionals of all age groups. Join our course and take a step towards being confident.
           </p>
-          <button>Register Now</button>
+          <button><a href="https://forms.gle/HH63cVAsFiqkajES6"
+                  style={{ textDecoration: "none", color: "#ffffff" }}
+                  target="_blank"
+                  rel="noreferrer">Register Now</a></button>
         </div>
       </div>
       <div id="card-base">
@@ -87,7 +95,10 @@ function CourseCard() {
           <p>
           We provide free Career guidance to the students who are facing difficulty in decision making. It may be related to choosing the right college, course or anything else. We are here to help you.
           </p>
-          <button>Register Now</button>
+          <button><a href="https://forms.gle/chf8Ec2tZYTJ2tJY8"
+                  style={{ textDecoration: "none", color: "#ffffff" }}
+                  target="_blank"
+                  rel="noreferrer">Register Now</a></button>
         </div>
       </div>
       {/* <div id="card-base">
