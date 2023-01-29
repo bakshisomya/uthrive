@@ -57,7 +57,7 @@ placements.
             </div>
             <div id="content-div">
             <p>
-            Sir's teaching is very much appreciated as what is taught clearly made us understand. I would say I am very lucky to be a part of this and grateful for what sir has really made an effort to make the session more interesting. Thanks a lot sir!!!!
+            Sir's teaching is very much appreciated as what is taught clearly made us understand. I would say I am very lucky to be a part of this and grateful for what sir has really taught me. Thanks a lot sir!!!!
               </p>
               <h5>Rosefulda Swer</h5>
               <h6>NIT Meghalaya</h6>
