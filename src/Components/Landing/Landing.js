@@ -12,6 +12,7 @@ import design3 from "../../assets/images/Group 40.png";
 import ReviewCard from "../ReviewCard/ReviewCard";
 import footerlogo from "../../assets/images/Ellipse 14.png";
 import birdie from "../../assets/images/Vector 27.png";
+import milestones from "../../assets/images/Group 58.png";
 
 function Landing() {
   const [clicked, setclicked] = useState(false);
@@ -90,6 +91,23 @@ function Landing() {
           {/* </picture> */}
         </div>
       </div>
+      {/* achievements section */}
+      <div id="achivmnts">
+        <div id="textprt">
+          <h1>Our Journey and <br/> Milestones</h1>
+          <button>
+            <a
+              style={{ textDecoration: "none", color: "white" }}
+              href="#courses"
+            >
+              Join Us
+            </a>
+          </button>
+        </div>
+        <div id="imgprt">
+          <img src={milestones} alt="" />
+        </div>
+      </div>
       {/* our courses page */}
       <div id="courses">
         <img src={design2} id="design2" alt="" />
@@ -156,6 +174,7 @@ function Landing() {
             </div>
             </div>
       </div>
+      {/* footer section */}
       <footer id="contact">
         <div className="cols">
           <img id="futerlogo" src={footerlogo} alt="" />
