@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import Landing from './Components/Landing/Landing'
+import Coursedets from './Components/Coursedets/Coursedets'
+import { Routes, Route } from "react-router-dom"
+import Newevents from './Components/Newevents/Newevents';
 
 function App() {
   //this loader shows when only html is loaded and react is not rendered
@@ -14,7 +17,11 @@ function App() {
   }
   return (
     !loading && (
-      <Landing/>
+      <Routes>
+        <Route path="/" element={ <Landing/> } />
+        <Route path="events" element={ <Newevents/> } />
+        <Route path="course-details" element={ <Coursedets/> } />
+      </Routes>
     )
   )
 }

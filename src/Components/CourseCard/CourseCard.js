@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "./CourseCard.css";
 import "slick-carousel/slick/slick.css";
@@ -51,9 +52,7 @@ function CourseCard() {
           <p>
           This course consists of Technical and HR interview classes, Mock interview sessions, Resume making session, Soft skills sessions, GD session, company specific sessions and much more. Join us today.
           </p>
-          <button><a href="https://forms.gle/qRNZwmuEnB6ixF6x5" style={{ textDecoration: "none", color: "#ffffff" }}
-                  target="_blank"
-                  rel="noreferrer">Register Now</a></button>
+          <button><Link to="course-details" style={{ textDecoration: "none", color: "#ffffff" }}>Register Now</Link></button>
         </div>
       </div>
       <div id="card-base">

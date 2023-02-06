@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Landing.css";
+import { Link } from "react-router-dom";
 import logo from "../../assets/images/Nobg.png";
 import logowebp from "../../assets/images/Nobg.webp";
 import landingimg from "../../assets/images/landing.png";
@@ -24,7 +25,7 @@ function Landing() {
         <a href="index.html">
           <picture>
             <source srcSet={logowebp} type="image/webp" />
-            <img src={logo} style={{ width: "7rem" }} alt="" />
+            <img src={logo} style={{ width: "6rem" }} alt="" />
           </picture>
         </a>
         <div>
@@ -37,6 +38,9 @@ function Landing() {
             </li>
             <li>
               <a href="#colleges">Colleges Covered</a>
+            </li>
+            <li>
+            <Link to="events">New Events</Link>
             </li>
             <li>
               <a href="#about">About</a>
@@ -95,7 +99,7 @@ function Landing() {
       <div id="achivmnts">
         <div id="textprt">
           <h1>Our Journey and <br/> Milestones</h1>
-          <button>
+          <button id="desktop">
             <a
               style={{ textDecoration: "none", color: "white" }}
               href="#courses"
@@ -106,6 +110,14 @@ function Landing() {
         </div>
         <div id="imgprt">
           <img src={milestones} alt="" />
+          <button id="mobile">
+            <a
+              style={{ textDecoration: "none", color: "white" }}
+              href="#courses"
+            >
+              Join Us
+            </a>
+          </button>
         </div>
       </div>
       {/* our courses page */}
@@ -247,6 +259,13 @@ function Landing() {
           </div>
         </div>
       </footer>
+      <div style={{padding:"1rem",textAlign:"center",color:"rgba(0, 0, 0, 0.5)",fontFamily:"monospace"}}>
+          <hr />
+          <p>
+            Copyright &copy; 2023, Uthrive
+            .&nbsp;All rights reserved.
+          </p>
+        </div>
     </div>
   );
 }
