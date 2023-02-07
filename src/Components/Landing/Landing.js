@@ -14,7 +14,7 @@ import ReviewCard from "../ReviewCard/ReviewCard";
 import footerlogo from "../../assets/images/Ellipse 14.png";
 import birdie from "../../assets/images/Vector 27.png";
 import milestones from "../../assets/images/Group 58.png";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 
 function Landing() {
   const [clicked, setclicked] = useState(false);
@@ -31,30 +31,48 @@ function Landing() {
         </a>
         <div>
           <ul id="navbar" className={clicked ? "#navbar active" : "navbar"}>
+            {/* haslink was added for smooth scrolling to different sections of the page */}
             <li>
-              <HashLink smooth to="/#landing-base">Home</HashLink>
+              <HashLink smooth to="/#landing-base">
+                Home
+              </HashLink>
             </li>
             <li>
-              <HashLink smooth to="#courses">Our Courses</HashLink>
+              <HashLink smooth to="#courses">
+                Our Courses
+              </HashLink>
             </li>
             <li>
-              <a href="#colleges">Colleges Covered</a>
+              <HashLink smooth to="#colleges">
+                Colleges Covered
+              </HashLink>
             </li>
             <li>
-            <Link to="events">New Events</Link>
+              <Link to="events">New Events</Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <HashLink smooth to="#testimonials">
+                Reviews
+              </HashLink>
             </li>
             <li>
-              <a href="#testimonials">Reviews</a>
+              <HashLink smooth to="#about">
+                About
+              </HashLink>
             </li>
             <li>
-              <a href="https://forms.gle/apErTX3XAe9zEuAt7" target="_blank"
-              rel="noreferrer">Payment</a>
+              <a
+                href="https://forms.gle/apErTX3XAe9zEuAt7"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Payment
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <HashLink smooth to="#contact">
+                Contact
+              </HashLink>
             </li>
           </ul>
         </div>
@@ -81,12 +99,13 @@ function Landing() {
             first class instructors.
           </p>
           <button>
-            <a
+            <HashLink
               style={{ textDecoration: "none", color: "white" }}
-              href="#courses"
+              smooth
+              to="#courses"
             >
               Get Started
-            </a>
+            </HashLink>
           </button>
         </div>
         <div id="right">
@@ -99,7 +118,9 @@ function Landing() {
       {/* achievements section */}
       <div id="achivmnts">
         <div id="textprt">
-          <h1>Our Journey and <br/> Milestones</h1>
+          <h1>
+            Our Journey and <br /> Milestones
+          </h1>
           <button id="desktop">
             <a
               style={{ textDecoration: "none", color: "white" }}
@@ -143,13 +164,14 @@ function Landing() {
               placement prep courses in more than 20 colleges
             </p>
             <button>
-              <a
+              <HashLink
+                smooth
                 style={{ textDecoration: "none", color: "white" }}
-                href="#collegecards"
+                to="#collegecards"
               >
                 {" "}
                 Know More <i className="ri-arrow-down-line"></i>{" "}
-              </a>
+              </HashLink>
             </button>
           </div>
         </div>
@@ -167,25 +189,24 @@ function Landing() {
       </div>
       {/* about section  */}
       <div id="about">
-      <div id="underlay">
+        <div id="underlay">
           <div id="overlay">
-            <h1>
-              About Us
-            </h1>
+            <h1>About Us</h1>
             <p>
-            Uthrive is one of its kind edtech platform founded on 10th January
-            2021. In the last 18 months we have guided and helped more than 1500
-            students excel in their career and get desired job roles in various
-            companies. Our main goal is to provide students with access to
-            highly affordable and Quality courses, and therefore, since our
-            inception we have never launched any course which would cost more
-            than Rs. 300. Our courses include Placement Preparation course, and
-            English speaking course. Apart from these, we also organise regular
-            free webinars for students of all age groups. Join us today and stay
-            ahead of others in the race for Campus Placements.
+              Uthrive is one of its kind edtech platform founded on 10th January
+              2021. In the last 18 months we have guided and helped more than
+              1500 students excel in their career and get desired job roles in
+              various companies. Our main goal is to provide students with
+              access to highly affordable and Quality courses, and therefore,
+              since our inception we have never launched any course which would
+              cost more than Rs. 300. Our courses include Placement Preparation
+              course, and English speaking course. Apart from these, we also
+              organise regular free webinars for students of all age groups.
+              Join us today and stay ahead of others in the race for Campus
+              Placements.
             </p>
-            </div>
-            </div>
+          </div>
+        </div>
       </div>
       {/* footer section */}
       <footer id="contact">
@@ -234,12 +255,17 @@ function Landing() {
             </p>
           </div>
           <div id="footer-links">
-            <a href="#landing-base">Home</a>
-            <a href="#courses">Our Courses</a>
-            <a href="#testimonials">Reviews</a>
-            <a href="#about">About</a>
-            <a href="https://forms.gle/apErTX3XAe9zEuAt7" target="_blank"
-              rel="noreferrer">Payment</a>
+            <HashLink smooth to="#landing-base">Home</HashLink>
+            <HashLink smooth to="#courses">Our Courses</HashLink>
+            <HashLink smooth to="#testimonials">Reviews</HashLink>
+            <HashLink smooth to="#about">About</HashLink>
+            <a
+              href="https://forms.gle/apErTX3XAe9zEuAt7"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Payment
+            </a>
           </div>
         </div>
         <div className="cols">
@@ -260,13 +286,17 @@ function Landing() {
           </div>
         </div>
       </footer>
-      <div style={{padding:"1rem",textAlign:"center",color:"rgba(0, 0, 0, 0.5)",fontFamily:"monospace"}}>
-          <hr />
-          <p>
-            Copyright &copy; 2023, Uthrive
-            .&nbsp;All rights reserved.
-          </p>
-        </div>
+      <div
+        style={{
+          padding: "1rem",
+          textAlign: "center",
+          color: "rgba(0, 0, 0, 0.5)",
+          fontFamily: "monospace",
+        }}
+      >
+        <hr />
+        <p>Copyright &copy; 2023, Uthrive .&nbsp;All rights reserved.</p>
+      </div>
     </div>
   );
 }

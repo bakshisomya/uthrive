@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // HashRouter is used instead of browserRouter to refresh route pages
-
+//BrowserRouter is used again instead of HashRouter because react-router-hash-link package only works with BrowserRouter
 root.render(
-  <HashRouter history={root.history}>
+  <BrowserRouter>
     <App />
-  </HashRouter>,
+  </BrowserRouter>,
 );
 
 // If you want to start measuring performance in your app, pass a function
