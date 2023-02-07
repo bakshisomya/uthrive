@@ -38,25 +38,25 @@ function Landing() {
               </HashLink>
             </li>
             <li>
-              <HashLink smooth to="#courses">
+              <HashLink smooth to="/#courses">
                 Our Courses
               </HashLink>
             </li>
             <li>
-              <HashLink smooth to="#colleges">
+              <HashLink smooth to="/#colleges">
                 Colleges Covered
               </HashLink>
             </li>
             <li>
-              <Link to="events">New Events</Link>
+              <Link to="/events">New Events</Link>
             </li>
             <li>
-              <HashLink smooth to="#testimonials">
+              <HashLink smooth to="/#testimonials">
                 Reviews
               </HashLink>
             </li>
             <li>
-              <HashLink smooth to="#about">
+              <HashLink smooth to="/#about">
                 About
               </HashLink>
             </li>
@@ -70,7 +70,7 @@ function Landing() {
               </a>
             </li>
             <li>
-              <HashLink smooth to="#contact">
+              <HashLink smooth to="/#contact">
                 Contact
               </HashLink>
             </li>

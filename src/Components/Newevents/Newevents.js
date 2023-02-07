@@ -37,7 +37,7 @@ function Newevents() {
               </HashLink>
             </li>
             <li>
-              <Link to="events">New Events</Link>
+              <Link to="/events">New Events</Link>
             </li>
             <li>
               <HashLink smooth to="/#testimonials">
