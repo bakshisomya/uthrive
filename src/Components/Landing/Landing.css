@@ -44,12 +44,12 @@ nav {
     transition: 0.3s ease-in-out;
 }
 
-#navbar li a:hover {
+/* #navbar li a:hover {
     color: #CE76A6
-}
+} */
 
 /* create one line beneath hover effect */
-#navbar li a:hover::after {
+/* #navbar li a:hover::after {
     content: "";
     width: 30%;
     height: 2px;
@@ -58,7 +58,7 @@ nav {
     bottom: -4px;
     left: 20px;
 
-}
+} */
 
 #mobile {
     display: none;

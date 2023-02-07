@@ -9,6 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // HashRouter is used instead of browserRouter to refresh route pages
 //BrowserRouter is used again instead of HashRouter because react-router-hash-link package only works with BrowserRouter
+// even BrowserRouter did not work for the above issue.
 root.render(
   <BrowserRouter>
     <App />
