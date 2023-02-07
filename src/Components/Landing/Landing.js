@@ -14,6 +14,7 @@ import ReviewCard from "../ReviewCard/ReviewCard";
 import footerlogo from "../../assets/images/Ellipse 14.png";
 import birdie from "../../assets/images/Vector 27.png";
 import milestones from "../../assets/images/Group 58.png";
+import { HashLink } from 'react-router-hash-link';
 
 function Landing() {
   const [clicked, setclicked] = useState(false);
@@ -31,10 +32,10 @@ function Landing() {
         <div>
           <ul id="navbar" className={clicked ? "#navbar active" : "navbar"}>
             <li>
-              <a href="#landing-base">Home</a>
+              <HashLink smooth to="/#landing-base">Home</HashLink>
             </li>
             <li>
-              <a href="#courses">Our Courses</a>
+              <HashLink smooth to="#courses">Our Courses</HashLink>
             </li>
             <li>
               <a href="#colleges">Colleges Covered</a>

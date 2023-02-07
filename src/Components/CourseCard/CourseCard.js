@@ -64,10 +64,9 @@ function CourseCard() {
           <p>
           We organise regular free webinars on Placement process, Company interviews and new skills to make you industry ready. Click here to register for a free webinar.
           </p>
-          <button><a href="https://forms.gle/XEvsD3HcZfLov5Rt8"
+          <button><Link to="events"
                   style={{ textDecoration: "none", color: "#ffffff" }}
-                  target="_blank"
-                  rel="noreferrer">Register Now</a></button>
+                  >Register Now</Link></button>
         </div>
       </div>
       <div id="card-base">
