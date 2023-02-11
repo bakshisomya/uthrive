@@ -122,12 +122,13 @@ function Landing() {
             Our Journey and <br /> Milestones
           </h1>
           <button id="desktop">
-            <a
+            <HashLink
               style={{ textDecoration: "none", color: "white" }}
-              href="#courses"
+              smooth
+              to="#courses"
             >
               Join Us
-            </a>
+            </HashLink>
           </button>
         </div>
         <div id="imgprt">
