@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./Landing.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/Nobg.png";
-import logowebp from "../../assets/images/Nobg.webp";
 import landingimg from "../../assets/images/landing.png";
 import design1 from "../../assets/images/Group 11.png";
 import imgforphone from "../../assets/images/imgforphone.png";
@@ -24,10 +24,12 @@ function Landing() {
       {/* nav */}
       <nav>
         <a href="index.html">
-          <picture>
-            <source srcSet={logowebp} type="image/webp" />
-            <img src={logo} style={{ width: "6rem" }} alt="" />
-          </picture>
+        <LazyLoadImage
+            src={logo}
+            effect="blur"
+            width={100}
+            placeholderSrc={logo}
+          />
         </a>
         <div>
           <ul id="navbar" className={clicked ? "#navbar active" : "navbar"}>
@@ -85,9 +87,19 @@ function Landing() {
       </nav>
       {/* landing page base div */}
       <div id="landing-base">
-        <img id="design1" src={design1} alt="" />
+      <LazyLoadImage
+            src={design1}
+            effect="blur"
+            id="design1"
+            placeholderSrc={design1}
+          />
         <div id="img-for-tabsnphones">
-          <img id="pic-for-tabsnphones" src={imgforphone} alt="" />
+        <LazyLoadImage
+            src={imgforphone}
+            effect="blur"
+            id="pic-for-tabsnphones"
+            placeholderSrc={imgforphone}
+          />
         </div>
         <div id="left">
           <h1>

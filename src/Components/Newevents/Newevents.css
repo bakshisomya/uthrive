@@ -2,7 +2,7 @@
 #secondpage-base{
     width: 100%;
     height: 100vh;
-    padding: 4.5rem 0px 0px 0px;
+    padding: 3rem 0px 0px 0px;
     background-color: #f1f1f1;
     overflow-x: hidden;
 }
@@ -71,6 +71,7 @@
         position: relative;
         width: 100%;
         height: 100vh; 
+    padding: 4.5rem 0px 0px 0px;
         /*height can be changes to rem*/
         background-image: url(../../assets/images/humansmob.png);
         background-position: center;
