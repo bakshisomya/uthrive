@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./Landing.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/Nobg.png";
@@ -24,12 +23,7 @@ function Landing() {
       {/* nav */}
       <nav>
         <a href="index.html">
-        <LazyLoadImage
-            src={logo}
-            effect="blur"
-            width={100}
-            placeholderSrc={logo}
-          />
+            <img src={logo} style={{ width: "6rem" }} alt="" />
         </a>
         <div>
           <ul id="navbar" className={clicked ? "#navbar active" : "navbar"}>
@@ -87,19 +81,9 @@ function Landing() {
       </nav>
       {/* landing page base div */}
       <div id="landing-base">
-      <LazyLoadImage
-            src={design1}
-            effect="blur"
-            id="design1"
-            placeholderSrc={design1}
-          />
+        <img id="design1" src={design1} alt="" />
         <div id="img-for-tabsnphones">
-        <LazyLoadImage
-            src={imgforphone}
-            effect="blur"
-            id="pic-for-tabsnphones"
-            placeholderSrc={imgforphone}
-          />
+          <img id="pic-for-tabsnphones" src={imgforphone} alt="" />
         </div>
         <div id="left">
           <h1>

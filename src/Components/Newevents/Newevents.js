@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import logo from "../../assets/images/Nobg.png";
-import logowebp from "../../assets/images/Nobg.webp";
 import './Newevents.css'
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
@@ -13,10 +12,7 @@ function Newevents() {
     <div id="secondpage-base">
     <nav>
         <a href="index.html">
-          <picture>
-            <source srcSet={logowebp} type="image/webp" />
             <img src={logo} style={{ width: "6rem" }} alt="" />
-          </picture>
         </a>
         <div>
           <ul id="navbar" className={clicked ? "#navbar active" : "navbar"}>
