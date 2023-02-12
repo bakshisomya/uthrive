@@ -1,0 +1,31 @@
+#sessions-base {
+    min-width: 27rem;
+    max-width: 27rem;
+    /* react me min width hi set krte h agar nhi chahte ki card ki size khudse squeeze hojaye  */
+    height: 15rem;
+    background-color: rgb(255, 255, 255);
+    background-image: url("../../assets/images/Mask\ group.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    color:#323232
+}
+#sessions-content-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#sessions-base #sessions-content-div h4 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+#sessions-base #sessions-content-div ul {
+    font-size: 12px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
